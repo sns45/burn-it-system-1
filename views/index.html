@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="burnIt" ng-controller="burnCtrl">
+
+<head>
+    <title>Burn-It-System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/angular-aside/dist/css/angular-aside.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="shortcut icon" href="#" />
+    <!-- External Libs-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.js"></script>
+    <script src="libs/angular-cookies/angular-cookies.js"></script>
+    <script src="libs/ngstorage/ngStorage.min.js"></script>
+    <script src="libs/angular-aside/dist/js/angular-aside.min.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="libs/alasql/dist/alasql.js"></script>
+    <script src="libs/js-xls/dist/xls.core.min.js"></script>
+    <!--App Module-->
+    <script src="public/app.module.js"></script>
+    
+    
+    <!--Login Controlller Module-->
+    <script src="public/Deit_Plan/login.module.js"></script>
+    <script src="public/Deit_Plan/login.controller.js"></script>
+  
+
+    
+    <!--Build/Edit Controllers-->
+    <script src="public/keepTrack_Food/keeptrack.module.js"></script>
+    <script src="public/keepTrack_Food/keeptrack.controller.js"></script>
+    
+    <!-- Profile -->
+   <script src="public/controllers/Profile/Profile.module.js"></script>
+    <script src="public/controllers/Profile/Profile.controller.js"></script>
+    
+    <!-- welcome_plans -->
+   <script src="public/controllers/welcome_plans/welcome_plans.module.js"></script>
+    <script src="public/controllers/welcome_plans/welcome_plans.controller.js"></script>
+    
+     <!-- Work_Out -->
+   <script src="public/controllers/ Work_Out/ Work_Out.js"></script>
+    <script src="public/controllers/ Work_Out/ Work_Out.controller.js"></script>
+  
+    
+    <!-- Servcies -->
+    <script src="public/services/keeptrack.service.js"></script>
+    <script src="public/services/Profile.service.js"></script>
+    <script src="public/services/welcome_plans.service.js"></script>
+    <script src="public/services/Work_Out.service.js"></script>
+   
+</head>
+
+<body>
+    <div class="appender">
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="menu-alignment" ng-view></div>
+
+        </div>
+    </div>
+</body>
