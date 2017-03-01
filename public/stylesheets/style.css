@@ -1,15 +1,7 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
 .title-container,
 .save-plan-button {
     text-align: center;
+
 }
 
 .header {
@@ -31,15 +23,36 @@ a {
     /* Standard syntax */
 }
 
+.header2 {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    padding-left: 64px;
+    padding-right: 64px;
+    /*margin-top: 32px;*/
+    /*margin-bottom: 32px;*/
+    border: 1px solid #6C8EBF;
+   /* border-radius: 12px;*/
+    background-color: #B4CCF0;
+    background: -webkit-linear-gradient(#DAE8FC, #B4CCF0);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DAE8FC, #B4CCF0);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DAE8FC, #B4CCF0);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DAE8FC, #B4CCF0);
+    /* Standard syntax */
+}
+
 .form-container,
 .lose-method-choice-container {
-    width: 640px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 40px;
     border: 1px solid #6C8EBF;
-    border-radius: 12px;
+    border-radius: 35px;
     background-color: #7FA7E0;
     background: -webkit-linear-gradient(#DAE8FC, #7FA7E0);
     /* For Safari 5.1 to 6.0 */
@@ -50,6 +63,8 @@ a {
     background: linear-gradient(#DAE8FC, #7FA7E0);
     /* Standard syntax */
 }
+
+
 
 .input-field {
     display: block;
@@ -69,8 +84,8 @@ a {
     border: 2px solid #a1a1a1;
     padding: 120px 40px;
     background: #ffffff;
-    width: 700px;
-    height: 900px;
+    width: 800px;
+    height: 950px;
     border-style: solid;
     border-color: #7EA6E0;
     border-width: 25px;
@@ -107,10 +122,21 @@ a {
 .save-plan,
 .save-nutritionist,
 .save-work-out-plan {
-    border-radius: 16px;
+    border-radius: 5px;
     background-color: #008CFF;
     color: #FFF;
     padding: 16px;
+    width: 90px;
+   /* height: 30px;*/
+}
+
+.save-plan2 {
+    border-radius: 5px;
+    background-color: #008CFF;
+    color: #FFF;
+    padding: 16px;
+    /*width: 90px;*/
+   /* height: 30px;*/
 }
 
 .save-plan-button {
@@ -177,7 +203,6 @@ a {
 .nutritionist-list-table,
 .gym-list-table,
 .personal-trainer-list-table {
-    
     border: 1px solid;
     border-collapse: collapse;
     margin-left: auto;
@@ -202,4 +227,3 @@ td {
 .workout-option {
     margin-bottom: 64px;
 }
-
