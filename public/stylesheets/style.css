@@ -47,10 +47,53 @@
 .form-container,
 .lose-method-choice-container {
     width: 750px;
+    /*height: 50px;*/
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 40px;
+    border: 1px solid #6C8EBF;
+    border-radius: 35px;
+    background-color: #7FA7E0;
+    background: -webkit-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DAE8FC, #7FA7E0);
+    /* Standard syntax */
+}
+/*.login{
+    width:300px;
+    height:400px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#FFFFFF;
+}*/
+.signUp{
+   /* padding-top: 10px;*/
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginbloc{
+    width:300px;
+    height:400px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#FFFFFF;
+}
+.loginContainer {
+    width: 750px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+   /* padding-bottom: 40px;*/
     border: 1px solid #6C8EBF;
     border-radius: 35px;
     background-color: #7FA7E0;
@@ -82,12 +125,15 @@
 
 .maincontainer {
     border: 2px solid #a1a1a1;
-    padding: 120px 40px;
+    /*padding: 120px 40px;*/
+    padding-top: 50px;
     background: #ffffff;
     margin-left: auto ;
     margin-right: auto ;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 750px;
-    height: 850px;
+    height: 750px;
     border-style: solid;
     border-color: #7EA6E0;
     border-width: 25px;

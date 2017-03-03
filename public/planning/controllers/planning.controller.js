@@ -10,10 +10,15 @@
         
          vm.workout = {};
          vm.sendWorkout = sendWorkout;
-
+          vm.sendNutri = sendNutri;
         function sendWorkout() {
                 $location.path("/workout");
+           
+        };
+        function sendNutri() {
+                $location.path("/nutritionists");
            
         }
     }
 })();
+
