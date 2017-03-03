@@ -7,7 +7,6 @@
 
     function WorkOutCtrl(CommonSvc, $location) {
         var vm = this;
-
-    
+   
     }
 })();

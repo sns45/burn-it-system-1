@@ -23,7 +23,7 @@
     /* Standard syntax */
 }
 
-.header2 {
+.header23 {
     display: inline-block;
     width: 350px;
     height: 50px;
@@ -84,13 +84,15 @@
     border: 2px solid #a1a1a1;
     padding: 120px 40px;
     background: #ffffff;
-    width: 800px;
-    height: 950px;
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 750px;
+    height: 850px;
     border-style: solid;
     border-color: #7EA6E0;
     border-width: 25px;
     margin-top: 50px;
-    margin-left: 700px;
+    
     top: 30px;
 }
 
@@ -143,13 +145,14 @@
     margin-top: 24px;
     margin-bottom: 24px;
 }
-
+.header2
 .result-container,
 .choose-method-container {
     margin-top: 32px;
     margin-bottom: 16px;
     padding: 16px 48px;
     border: 1px solid #000;
+    background-color: #B4CCF0;
 }
 
 .weight-difference-container {
@@ -160,6 +163,20 @@
     padding-bottom: 4px;
     border: 1px solid #000;
 }
+
+/*
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 16px 48px;
+    border: 1px solid #000;
+    
+   
+}
+*/
+
+
+
 
 .choose-method-container {
     text-align: center;

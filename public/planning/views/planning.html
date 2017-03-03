@@ -1,9 +1,9 @@
 <div class="welcome-plans">
-    <div class="title-container">
+    <!--<div class="title-container">
         <div class="header">
             <h1>Welcome to Burn It!</h1>
         </div>
-    </div>
+    </div>-->
     <div class="title-container">
         <div class="header">
             <div class="result-container">
@@ -27,9 +27,13 @@
             </div>
         </div>
         <div class="choose-fitness-method-buttons-container">
+            
             <div class="choose-fitness-method-button-wrapper">
-                <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out">
+                <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out" 
+                       ng-click="vm.sendWorkout()">
             </div>
+            
+            
             <div class="choose-fitness-method-button-wrapper">
                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food">
             </div>
