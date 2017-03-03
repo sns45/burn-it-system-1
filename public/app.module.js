@@ -1,11 +1,11 @@
 
 angular
     .module("burnIt", [
-        "burnIt.main",
-        "burnIt.planning",
-        "burnIt.workout",
-        "burnIt.nutritionists",
-         "burnIt.loginSignup"
+    "burnIt.main",
+    "burnIt.planning",
+    "burnIt.workout",
+   // "burnIt.nutritionists",
+    "burnIt.loginSignup"
     ])
     .service("CommonSvc", function () {
         var self = this;
