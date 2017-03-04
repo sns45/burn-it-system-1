@@ -4,8 +4,9 @@ angular
     "burnIt.main",
     "burnIt.planning",
     "burnIt.workout",
-   // "burnIt.nutritionists",
-    "burnIt.loginSignup"
+   //"burnIt.nutritionists",
+    "burnIt.loginSignup",
+    "burnIt.deitplan"
     ])
     .service("CommonSvc", function () {
         var self = this;
