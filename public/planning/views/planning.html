@@ -20,17 +20,17 @@
         </div>
         <div class="choose-fitness-method-buttons-container">
             <div class="choose-fitness-method-button-wrapper">
-                <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()">
+                <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.route('nutritionists')">
             </div>
             <div class="choose-fitness-method-button-wrapper">
                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan">
             </div>
-        </div> 
+        </div>   
         <div class="choose-fitness-method-buttons-container">
             
             <div class="choose-fitness-method-button-wrapper">
                 <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out" 
-                       ng-click="vm.sendWorkout()">
+                        ng-click="vm.route('workout')">
             </div>
             
             
@@ -41,7 +41,7 @@
     </div>
     <div class="save-plan-button">
         <div class="save-plan-wrapper">
-            <input type="button" value="Save your Plan" name="save-plan" class="save-plan2">
+            <input type="button" value="Save your Plan" name="save-plan" class="save-plan2" ng-click="vm.route('login')">
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
         .config(["$routeProvider", function ($routeProvider) {
             $routeProvider.when("/nutritionists", {
                 templateUrl: "nutritionists/views/nutritionists.html",
-                controller: "NCtrl",
+                controller: "NutritionistsCtrl",
                 controllerAs: "vm"
             });
         }])

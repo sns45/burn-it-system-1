@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>
+            Welcome    
+        </title>
+        <style>
+        #outerbox {
+            background: #2172ad;
+            padding: 10px; 
+            width: 900px;
+            height: 580px; 
+            margin-top: inherit;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        #innerbox {
+            background: #ffffff;
+            width: inherit;
+            height: inherit;
+            }
+        #builddietplan
+            {
+                position: absolute;
+                background: #DAE8FC;
+                border: 2px solid #6C8EBF;
+                width: 200px;
+                height: 50px;
+                top: 50px;
+                bottom:500px;
+                left: 42%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            #innerwhitebox
+            {
+                position: absolute;
+                background: #ffffff;
+                border: 2px solid #000000;
+                width: 500px;
+                height: 380px;
+                top: 150px;
+                bottom:200px;
+                left: 30%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            
+            }
+            #breakfast{
+                border-radius: 10px;
+                position: absolute;
+                background: #FFA500;
+                width: 240px;
+                height: 60px;
+                top: 13%;
+                left: 26%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            
+            }
+            #daylabel{
+                position: absolute;
+                top: 5%;
+                left: 44%;
+            }
+            #caloriebox{
+                position: absolute;
+                border: 2px solid #000000;
+                width: 70px;
+                height: 30px;
+                top: 10%;
+                left: 85%;
+                
+            }
+            #searchbutton{
+                border-radius: 5px;
+                color: white;
+                position: absolute;
+                background: #DAE8FC;
+                border: 2px solid #000000;
+                top: 70%;
+                left: 25%;
+                height: 11%;
+                width: 20%;
+                text-decoration-color: white;
+            }
+            #addbutton
+            {
+               border-radius: 5px;
+                position: absolute;
+                background: #FFCD28;
+                color: white;
+                border: 2px solid #000000;
+                top: 87%;
+                left: 52%;
+                height: 11%;
+                width: 20%;
+                text-decoration-color: white;
+            }
+            #savebutton,#previewbutton,#editbutton{
+                border-radius: 7px;
+                position: absolute;
+                background: #008CFF;
+                color: white;
+                height: 5%;
+                width: 10%;
+                font: 16px;
+                top: 90%;
+            }
+            #savebutton{
+                left: 30%;
+                
+            }
+            #previewbutton{
+                left: 45%;
+                
+            }
+            #editbutton{
+                left: 59%;
+                
+            }
+            #firstsnack{
+                border-radius: 10px;
+                position: absolute;
+                background: #ffffff;
+                border: 2px solid #000000;
+                width: 230px;
+                height: 50px;
+                top: 31%;
+                left: 27%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            
+            }
+            #lunch{
+                border-radius: 10px;
+                position: absolute;
+                background: #DAE8FC;
+                border: 1px solid #6C8EBF;
+                width: 240px;
+                height: 60px;
+                top: 48%;
+                left: 26%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+            }
+            #secondsnack{
+                border-radius: 10px;
+                position: absolute;
+                background: #ffffff;
+                border: 2px solid #000000;
+                width: 230px;
+                height: 50px;
+                top: 67%;
+                left: 27%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            
+            }
+            #dinner{
+                
+                border-radius: 10px;
+                position: absolute;
+                background: #DAE8FC;
+                border: 1px solid #6C8EBF;
+                width: 240px;
+                height: 60px;
+                top: 83%;
+                left: 26%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outerbox">
+            <div id="innerbox">
+               
+            <p id="builddietplan">
+                Build your diet plan</p>
+            </div>
+            <div id="innerwhitebox">
+                <label id="daylabel">Tuesday</label>
+                <lable id="breakfast"> Breakfast<br>Max 500 Calories</lable>
+                
+                <label id="firstsnack"> <b>First Snack Max</b><br>200 calories</label>
+                <lable id="lunch"> Lunch<br>Max 500 Calories</lable>
+                <label id="secondsnack"><b>Second Snack Max</b><br>200 calories</label>
+                <lable id="Dinner"> Dinner<br>Max 500 Calories</lable>
+                
+                            </div>
+             <input type="button" id="savebutton" value="Save">
+            <input type="button" id="previewbutton" value="Preview">
+            <input type="button" id="editbutton" value="Edit">
+        </div>
+        
+    </body>
+
+</html>

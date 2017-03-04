@@ -7,5 +7,10 @@
                 controller: "LoginCtrl",
                 controllerAs: "vm"
             });
+            $routeProvider.when("/register", {
+                templateUrl: "login/views/signup.html",
+                controller: "SignupCtrl",
+                controllerAs: "vm"
+            });
         }])
 })();
