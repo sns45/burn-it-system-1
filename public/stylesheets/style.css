@@ -517,17 +517,17 @@ td {
     text-align: center;
 }
 
-#outerbox2 {
+.outerbox2 {
     background: linear-gradient(to top, #2172ad, #DAE8FC);
     padding: 10px;
     width: 900px;
-    height: 500px;
+    height: 700px;
     margin-top: inherit;
     margin-left: auto;
     margin-right: auto;
 }
 
-#innerbox2 {
+.innerbox2 {
     background: #ffffff;
     padding: 10px;
     position: absolute;
@@ -536,43 +536,52 @@ td {
     left: 30%;
     padding: 20px;
     width: 300px;
-    height: 300px;
+    height: 500px;
 }
 
 #textbox2 {
-    height: 15%;
+    height: 10%;
     width: inherit;
     margin-bottom: 5px;
 }
 
-#signupbutton2 {
+.signupbutton2 {
     border-radius: 7px;
-    position: absolute;
     background: #FFCD28;
     color: white;
     top: 73%;
     left: 37%;
     height: 8%;
-    width: 12%;
+    width: 100px;
     text-decoration-color: white;
     font-size: 20px;
+    margin-top: : 450px;
+    margin-left: 120px;
+    margin-right: auto;
 }
 
-#profilebox2 {
+.profilebox2 {
     border: 1px solid #000000;
-    position: absolute;
-    top: 10%;
-    left: 65%;
-    width: 10%;
+    height: 100px;
+    width: 150px;
+    margin-left: 700px;
+    margin-bottom: 5px;
+}
+.picture{
+  margin-left: auto;
+  margin-top: : 150px;
+  margin-right:  50px;
+  margin-bottom: 5px;
+
 }
 
-#uploadbutton2 {
+.uploadbutton2 {
     border: 1px solid #B3B3B3;
-    position: absolute;
-    top: 35%;
     left: 65%;
-    width: 10%;
+    width: 80px;
     height: 5%;
     font-size: 16px;
+    margin-left: 700px;
+    margin-top: : 700px;
     text-align: center;
 }
