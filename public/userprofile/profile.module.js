@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
     "use strict";
     angular.module("burnIt.profile", ["ngRoute"])
         .config(["$routeProvider", function ($routeProvider) {
@@ -8,4 +8,4 @@
                 controllerAs: "vm"
             });
         }])
-})();
+})();*/
