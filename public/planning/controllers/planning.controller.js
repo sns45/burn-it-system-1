@@ -9,7 +9,7 @@
         var vm = this;
         vm.route = route;
         function route(param) {
-            switch (param){   
+            switch (param){
                 case 'nutritionists':
                     $location.path('/nutritionists');
                     break;
@@ -19,15 +19,22 @@
                     /*$location.path('/register');*/
                     $location.path('/workout');
                     break;
+                case 'diet':
+                        $location.path('/deit');
+                        break;
                  case 'login':
                     $location.path('/login');
                     break;
+                 case 'Back':
+                       $location.path('/');
+                       break;
+
             }
         }
     }
-    
-    
-    
+
+
+
    // function PlanningCtrl(CommonSvc, $location) {
       /*  var vm = this;
         vm.route = route;*/
@@ -36,14 +43,13 @@
           vm.sendNutri = sendNutri;
         function sendWorkout() {
                 $location.path("/workout");
-           
+
         };
         function sendNutri() {
                 $location.path("/nutritionists");
-           
+
         }
         */
-    
+
   //  }
 })();
-

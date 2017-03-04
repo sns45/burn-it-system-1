@@ -1,4 +1,4 @@
-.title-container,
+    .title-container,
 .save-plan-button {
     text-align: center;
 }
@@ -49,6 +49,26 @@
     /*height: 50px;*/
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #6C8EBF;
+    border-radius: 35px;
+    background-color: #7FA7E0;
+    background: -webkit-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DAE8FC, #7FA7E0);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DAE8FC, #7FA7E0);
+    /* Standard syntax */
+}
+
+.form-container2 {
+    width: 750px;
+    /*height: 50px;*/
+    margin-left: 700px;
+    margin-right: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
     border: 1px solid #6C8EBF;
@@ -136,6 +156,22 @@
     border-radius: 5px;
 }
 
+.welcomelogin {
+    margin-left: 1000px;
+}
+
+.welcomelogin2 {
+    margin-left: 1100px;
+}
+
+.submit-button2 {
+    border-radius: 10px;
+    margin-left: 223px;
+    margin-right: auto;
+    margin-top: 23px;
+    margin-bottom: auto;
+}
+
 .maincontainer2 {
     border: 2px solid #a1a1a1;
     /*padding: 120px 40px;*/
@@ -171,7 +207,31 @@
     margin-top: 50px;
     top: 30px;
 }
+.maincontainer3 {
+    border: 2px solid #a1a1a1;
+    /*padding: 120px 40px;*/
+    padding-top: 50px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1050px;
+    height: 550px;
+    border-style: solid;
+    border-color: #7EA6E0;
+    border-width: 25px;
+    margin-top: 50px;
+    top: 30px;
+}
+.buttonPosition{
 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 2050px;
+
+}
 .md-button {
     padding: 0 6px 0 6px;
     margin: 6px 8px 6px 8px;
@@ -567,12 +627,12 @@ td {
     margin-left: 700px;
     margin-bottom: 5px;
 }
-.picture{
-  margin-left: auto;
-  margin-top: : 150px;
-  margin-right:  50px;
-  margin-bottom: 5px;
 
+.picture {
+    margin-left: auto;
+    margin-top: : 150px;
+    margin-right: 50px;
+    margin-bottom: 5px;
 }
 
 .uploadbutton2 {
@@ -585,3 +645,181 @@ td {
     margin-top: : 700px;
     text-align: center;
 }
+
+#outerbox {
+    background: #2172ad;
+    padding: 10px;
+    width: 900px;
+    height: 580px;
+    margin-top: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#innerbox {
+    background: #ffffff;
+    width: inherit;
+    height: inherit;
+}
+
+#builddietplan {
+    position: absolute;
+    background: #DAE8FC;
+    border: 2px solid #6C8EBF;
+    width: 200px;
+    height: 50px;
+    top: 50px;
+    bottom: 500px;
+    left: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#innerwhitebox {
+    position: absolute;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 500px;
+    height: 380px;
+    top: 150px;
+    bottom: 200px;
+    left: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#breakfast {
+    border-radius: 10px;
+    position: absolute;
+    background: #FFA500;
+    width: 240px;
+    height: 60px;
+    top: 13%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#daylabel {
+    position: absolute;
+    top: 5%;
+    left: 44%;
+}
+
+#caloriebox {
+    position: absolute;
+    border: 2px solid #000000;
+    width: 70px;
+    height: 30px;
+    top: 10%;
+    left: 85%;
+}
+
+#searchbutton {
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    background: #DAE8FC;
+    border: 2px solid #000000;
+    top: 70%;
+    left: 25%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+
+#addbutton {
+    border-radius: 5px;
+    position: absolute;
+    background: #FFCD28;
+    color: white;
+    border: 2px solid #000000;
+    top: 87%;
+    left: 52%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+
+#savebutton,
+#previewbutton,
+#editbutton {
+    border-radius: 7px;
+    position: absolute;
+    background: #008CFF;
+    color: white;
+    height: 5%;
+    width: 10%;
+    font: 16px;
+    top: 90%;
+}
+
+#savebutton {
+    left: 30%;
+}
+
+#previewbutton {
+    left: 45%;
+}
+
+#editbutton {
+    left: 59%;
+}
+
+#firstsnack {
+    border-radius: 10px;
+    position: absolute;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 230px;
+    height: 50px;
+    top: 31%;
+    left: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#lunch {
+    border-radius: 10px;
+    position: absolute;
+    background: #DAE8FC;
+    border: 1px solid #6C8EBF;
+    width: 240px;
+    height: 60px;
+    top: 48%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#secondsnack {
+    border-radius: 10px;
+    position: absolute;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 230px;
+    height: 50px;
+    top: 67%;
+    left: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#dinner {
+    border-radius: 10px;
+    position: absolute;
+    background: #DAE8FC;
+    border: 1px solid #6C8EBF;
+    width: 240px;
+    height: 60px;
+    top: 83%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
