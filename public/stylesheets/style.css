@@ -64,6 +64,17 @@
     background: linear-gradient(#DAE8FC, #7FA7E0);
     /* Standard syntax */
 }
+
+.lose-method-choice-container2{
+    width: 750px;
+    /*height: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #6C8EBF;
+    border-radius: 2px;
+}
 /*.login{
     width:300px;
     height:400px;
@@ -123,6 +134,27 @@
     border-radius: 5px;
 }
 
+.maincontainer2 {
+    border: 2px solid #a1a1a1;
+    /*padding: 120px 40px;*/
+    padding-top: 50px;
+    background: #ffffff;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 750px;
+    height: 550px;
+    border-style: solid;
+    border-color: #7EA6E0;
+    border-width: 25px;
+    margin-top: 50px;
+
+    top: 30px;
+}
+
+
+
 .maincontainer {
     border: 2px solid #a1a1a1;
     /*padding: 120px 40px;*/
@@ -138,7 +170,7 @@
     border-color: #7EA6E0;
     border-width: 25px;
     margin-top: 50px;
-    
+
     top: 30px;
 }
 
@@ -216,8 +248,8 @@
     margin-bottom: 16px;
     padding: 16px 48px;
     border: 1px solid #000;
-    
-   
+
+
 }
 */
 
@@ -236,6 +268,7 @@
 .choose-method {
     border: 1px solid;
     padding: 20px;
+    margin-right:23px;
 }
 
 .choose-fitness-method-buttons-container {
@@ -342,9 +375,9 @@ td {
 }
 .outerbox {
     background: #2172ad;
-    padding: 10px; 
+    padding: 10px;
     width: 900px;
-    height: 500px; 
+    height: 500px;
     margin-top: inherit;
     margin-left: auto;
     margin-right: auto;
@@ -356,7 +389,7 @@ td {
             }
 .builddietplan
             {
-    position: absolute;
+    /*position: absolute;*/
     background: #DAE8FC;
     border: 2px solid #6C8EBF;
     width: 200px;
@@ -366,6 +399,8 @@ td {
     left: 42%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
     text-align: center;
             }
 .innerwhitebox
@@ -373,15 +408,17 @@ td {
     position: absolute;
     background: #ffffff;
     border: 2px solid #000000;
-    width: 500px;
+    width: 600px;
     height: 300px;
     top: 150px;
     bottom:200px;
-    left: 35%;
+    left: 30%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
+   /* margin-bottom: 48px;*/
     text-align: center;
-            
+
             }
 .foodname{
     border-radius: 10px;
@@ -395,12 +432,12 @@ td {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-            
+
             }
 .maxcalorieslabel{
      position: absolute;
      top: 12%;
-     left: 60%;
+     left: 54%;
             }
 .caloriebox{
       position: absolute;
@@ -409,13 +446,14 @@ td {
       height: 30px;
       top: 10%;
       left: 85%;
-                
+
             }
 .searchbutton{
                 border-radius: 5px;
                 color: white;
                 position: absolute;
-                background: #DAE8FC;
+                background: #008CFF;
+                font: 16px;
                 border: 2px solid #000000;
                 top: 70%;
                 left: 25%;
@@ -434,11 +472,13 @@ td {
                 text-decoration-color: white;
 
             }
+
 .addbutton
             {
                border-radius: 5px;
                 position: absolute;
-                background: #FFCD28;
+                background: #008CFF;
+                font: 16px;
                 color: white;
                 border: 2px solid #000000;
                 top: 87%;
@@ -457,6 +497,8 @@ td {
       height: 5%;
       width: 10%;
       font: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px;
             }
 .savebutton{
      left: 35%;
@@ -470,3 +512,10 @@ td {
      left: 64%;
      top: 80%;
             }
+.deitbuttons{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 570px;
+      margin-bottom: 5px;
+      text-align: center;
+      }

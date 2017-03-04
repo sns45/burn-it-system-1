@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 
 (function () {
     angular
@@ -7,8 +7,8 @@
 
     function DeitPlanCtrl(CommonSvc, $location) {
         var vm = this;
-        
-        vm.route = route;
+
+        //vm.route = route;
 
     }
-})();*/
+})();

@@ -5,10 +5,9 @@ angular
     "burnIt.planning",
     "burnIt.nutritionists",
     "burnIt.workout",
-    "burnIt.login"
-    //"burnIt.profile",
-    //,
-    //"burnIt.deitplan"
+    "burnIt.login",
+    "burnIt.profile",
+    "burnIt.deitplan"
     ])
     .service("CommonSvc", function () {
         var self = this;

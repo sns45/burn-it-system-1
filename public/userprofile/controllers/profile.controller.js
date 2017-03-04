@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 
 (function () {
     angular
@@ -9,4 +9,4 @@
         var vm = this;
 
     }
-})();*/
+})();

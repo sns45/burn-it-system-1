@@ -9,21 +9,21 @@
        <div class="loginbloc">
         <fieldset >
             <legend>Sign in</legend> Username:
-            <br> 
+            <br>
             <input type="text" name="" value="username">
             <br> Password:
-            <br> 
+            <br>
             <input type="password" name="" value="password">
             <br>
-            <input type="button" value="Sign in">
-            <br> <a href="">Forgot Password?</a> 
+            <input type="button" value="SignIn" ng-click="vm.route('SignIn')">
+            <br> <a href="/#!/profile" ng-click="vm.route('Fpassword')">Forgot Password?</a> 
        </fieldset>
            <div class="signUp" >
-           <fieldset > 
+           <fieldset >
             <legend>New User</legend>
-            <input type="button" value="Register">
-            <br> 
+            <input type="button" value="Register" ng-click="vm.route('Register')">
+            <br>
            </fieldset>
-           </div>  
+           </div>
     </div>
    </div>

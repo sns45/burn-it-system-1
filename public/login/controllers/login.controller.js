@@ -7,6 +7,22 @@
 
     function LoginCtrl(CommonSvc, $location) {
         var vm = this;
-         
+        vm.route = route;
+        function route(param) {
+            switch (param){
+                case 'SignIn':
+                    $location.path('/profile');
+                    break;
+                case 'Register':
+                    // save logic
+                    // CommonSvc.set
+                    /*$location.path('/register');*/
+                    $location.path('/login');
+                    break;
+                 case 'Fpassword':
+                    $location.path('/profile');
+                    break;
+            }
+        } 
     }
 })();

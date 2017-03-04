@@ -1,38 +1,58 @@
 
-    <div class="user-profile">
-        <div class="title-container">
-            <div class="header">
-                <h2>Your Profile</h2>
-            </div>
-        </div>
+    <div class="maincontainer2">
         <div class="user-info-container">
             <div class="user-image-container">
                 <img class="user-image" src="https://image.freepik.com/free-icon/user-male-shape-in-a-circle-ios-7-interface-symbol_318-35357.jpg">
             </div>
             <div class="user-personal-info-container">
                 <div class="user-personal-info-row">
-                    <span>First name: John</span>
+                    <span>First name: {John}</span>
                 </div>
                 <div class="user-personal-info-row">
-                    <span>Last name: John</span>
+                    <span>Last name: {Doe}</span>
                 </div>
                 <div class="user-personal-info-row">
-                    <span>Address: 20 Bergen Avenue Bronx NY 1001</span>
+                    <span>Address: {20 Bergen Avenue Bronx NY 1001}</span>
                 </div>
                 <div class="user-personal-info-row physical-parameters-row">
                     <div class="physical-parameters">
-                        <span>Age: 28</span>
+                        <span>Age: {28}</span>
                     </div>
                     <div class="physical-parameters">
-                        <span>Height: 5'8"</span>
+                        <span>Height: {5'8}"</span>
                     </div>
                     <div class="physical-parameters">
-                        <span>Weight: 300lb</span>
+                        <span>Weight: {300lb}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="user-profile-options">
+
+        <div class="lose-method-choice-container2">
+         <div class="choose-fitness-method-buttons-container">
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()">
+             </div>
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan">
+             </div>
+         </div>
+         <div class="choose-fitness-method-buttons-container">
+
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out"
+                        ng-click="vm.sendWorkout()">
+             </div>
+
+
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food">
+             </div>
+         </div>
+     </div>
+
+
+     <!--<div class="user-profile-options">
             <div class="user-profile-fitness-method-buttons-container">
             <div class="user-profile-fitness-method-button-wrapper">
                 <input type="button" name="user-profile-nutritionist" class="user-profile-fitness-method-input user-profile-nutritionist" value="Nutritionist">
@@ -49,6 +69,7 @@
                 <input type="button" name="user-profile-keep-track-of-food" class="user-profile-fitness-method-input user-profile-keep-track-of-food" value="Keep Track of your Food">
             </div>
         </div>
-        </div>
-    </div>
+      </div>-->
 
+
+    </div>
