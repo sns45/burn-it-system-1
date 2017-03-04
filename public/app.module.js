@@ -4,6 +4,7 @@ angular
     "burnIt.main",
     "burnIt.planning",
     "burnIt.workout",
+    "burnIt.profile",
    //"burnIt.nutritionists",
     "burnIt.loginSignup",
     "burnIt.deitplan"
