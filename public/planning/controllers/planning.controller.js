@@ -22,6 +22,9 @@
                 case 'diet':
                         $location.path('/deit');
                         break;
+                case 'nutritionfacts':
+                        $location.path('/nutritionfacts');
+                        break;
                  case 'login':
                     $location.path('/login');
                     break;

@@ -7,7 +7,8 @@ angular
     "burnIt.workout",
     "burnIt.login",
     "burnIt.profile",
-    "burnIt.deitplan"
+    "burnIt.deitplan",
+    "burnIt.trackfood"
     ])
     .service("CommonSvc", function () {
         var self = this;

@@ -516,6 +516,20 @@ td {
     text-decoration-color: white;
 }
 
+.searchbutton2 {
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    background: #008CFF;
+    font: 16px;
+    border: 2px solid #000000;
+    top: 70%;
+    left: 50%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+
 .contentcaloriebox {
     position: absolute;
     border: 2px solid #000000;
@@ -919,6 +933,6 @@ td {
 }
 
 .vertical-menu a.active {
-    background-color: #4CAF50;
+    background-color: #6C8EBF;
     color: white;
 }
