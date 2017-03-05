@@ -657,17 +657,19 @@ td {
 
 .signupbutton2 {
     border-radius: 7px;
-    background: #FFCD28;
+    background: #6C8EBF;
     color: white;
-    top: 73%;
-    left: 37%;
-    height: 8%;
-    width: 100px;
-    text-decoration-color: white;
-    font-size: 20px;
-    margin-top: : 450px;
-    margin-left: 120px;
-    margin-right: auto;
+    height: 30px;
+    width: 90px;
+
+}
+
+.signupbutton3 {
+    border-radius: 7px;
+    background: #DAE8FC;
+    color: white;
+
+
 }
 
 .profilebox2 {

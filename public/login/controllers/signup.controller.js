@@ -9,9 +9,12 @@
         var vm = this;
         vm.route = route;
         function route(param) {
-            switch (param){
+            switch (param){ 
                 case 'signup':
                     $location.path('/profile');
+                    break;
+                case 'back':
+                    $location.path('/login');
                     break;
                
             }
