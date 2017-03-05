@@ -3,9 +3,9 @@
 (function () {
     angular
         .module("burnIt.deitplan")
-        .controller("DeitPlanCtrl", ["CommonSvc", "$location", DeitPlanCtrl]);
+        .controller("DeitPlanPreviewCtrl", ["CommonSvc", "$location", DeitPlanPreviewCtrl]);
 
-    function DeitPlanCtrl(CommonSvc, $location) {
+    function DeitPlanPreviewCtrl(CommonSvc, $location) {
         var vm = this;
 
         //vm.route = route;
