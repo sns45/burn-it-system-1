@@ -1,26 +1,29 @@
-<div class="maincontainer3">
-    <div id="innerbox">
-        <p id="builddietplan"> Build your diet plan</p>
+<!--<div class="maincontainer3">-->
+    <!--<div class="innerbox">
+        <p class="builddietplan"> Build your diet plan</p>
+    </div>-->
+
+<div class="maincontainer">
+    <div class="workout-option">
+        <div class="title-container">
+            <div class="header2">
+                <!--<p3>Best Gyms in your region within 20 miles</p3>-->
+                <span class="choose-method">Build your diet plan</span>
+            </div>
+        </div>
+    <div class="innerwhitebox2">
+        <input type="button" value="Breakfast Max 500 Calories" name="breakfast" class="breakfast" ng-click="vm.route('dailydeit')">
+        <input type="button" value="First Snack Max 200 calories" name="firstsnack" class="firstsnack" ng-click="vm.route('dailydeit')">
+        <input type="button" value="Lunch Max 500 Calories " name="lunch" class="lunch" ng-click="vm.route('dailydeit')">
+        <input type="button" value="Second Snack Max 200 calories" name="ssnack" class="secondsnack" ng-click="vm.route('dailydeit')">
+        <input type="button" value="Dinner Max 500 Calories" name="diner" class="dinner" ng-click="vm.route('dailydeit')">
     </div>
-    <div id="innerwhitebox">
-        <label id="daylabel">Tuesday</label>
-        <lable id="breakfast"> Breakfast
-            <br>Max 500 Calories</lable>
-        <label id="firstsnack"> <b>First Snack Max</b>
-            <br>200 calories</label>
-        <lable id="lunch"> Lunch
-            <br>Max 500 Calories</lable>
-        <label id="secondsnack"><b>Second Snack Max</b>
-            <br>200 calories</label>
-        <lable id="Dinner"> Dinner
-            <br>Max 500 Calories</lable>
-    </div>
-     <div class="buttonPosition">
+     <div class="deitbuttons">
         <div class="save-plan-wrapper save-personal-trainer-wrapper">
           <input type="button" value="Save" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('save')">
           <input type="button" value="Preview" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('preview')">
-          <input type="button" value="Edit" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('Edit')">
-          <input type="button" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('Back')">
+          <input type="button" value="Edit" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('edit')">
+          <input type="button" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('back')">
         </div>
     </div>
 </div>

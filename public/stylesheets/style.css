@@ -645,7 +645,7 @@ td {
     margin-top: : 700px;
     text-align: center;
 }
-
+/*
 #outerbox {
     background: #2172ad;
     padding: 10px;
@@ -674,35 +674,25 @@ td {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
+}*/
 
-#innerwhitebox {
+.innerwhitebox2 {
     position: absolute;
     background: #ffffff;
     border: 2px solid #000000;
-    width: 500px;
-    height: 380px;
+    width: 330px;
+    height: 400px;
     top: 150px;
     bottom: 200px;
     left: 30%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
+    /* margin-bottom: 48px;*/
     text-align: center;
 }
 
-#breakfast {
-    border-radius: 10px;
-    position: absolute;
-    background: #FFA500;
-    width: 240px;
-    height: 60px;
-    top: 13%;
-    left: 26%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
+/*
 #daylabel {
     position: absolute;
     top: 5%;
@@ -768,52 +758,10 @@ td {
 #editbutton {
     left: 59%;
 }
+*/
 
-#firstsnack {
+.breakfast {
     border-radius: 10px;
-    position: absolute;
-    background: #ffffff;
-    border: 2px solid #000000;
-    width: 230px;
-    height: 50px;
-    top: 31%;
-    left: 27%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-#lunch {
-    border-radius: 10px;
-    position: absolute;
-    background: #DAE8FC;
-    border: 1px solid #6C8EBF;
-    width: 240px;
-    height: 60px;
-    top: 48%;
-    left: 26%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-#secondsnack {
-    border-radius: 10px;
-    position: absolute;
-    background: #ffffff;
-    border: 2px solid #000000;
-    width: 230px;
-    height: 50px;
-    top: 67%;
-    left: 27%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-#dinner {
-    border-radius: 10px;
-    position: absolute;
     background: #DAE8FC;
     border: 1px solid #6C8EBF;
     width: 240px;
@@ -822,4 +770,59 @@ td {
     left: 26%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     text-align: center;
+    margin-top: 30px;
+}
+.firstsnack {
+    border-radius: 10px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 230px;
+    height: 50px;
+    top: 31%;
+    left: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.lunch {
+    border-radius: 10px;
+    background: #DAE8FC;
+    border: 1px solid #6C8EBF;
+    width: 240px;
+    height: 60px;
+    top: 48%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.secondsnack {
+    border-radius: 10px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 230px;
+    height: 50px;
+    top: 67%;
+    left: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.dinner {
+    border-radius: 10px;
+    background: #DAE8FC;
+    border: 1px solid #6C8EBF;
+    width: 240px;
+    height: 60px;
+    top: 48%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
