@@ -9,9 +9,9 @@ request.post('/app/mutritionix', function(req, res){
        url: baseUrl.mutritionix,
        method:'POST',
        header: {
-           "Content-Type": "application/json";
-           "x-app-id" : "096abb16";
-           "x-app-key"  : "41039f1fc76e5e5de6484456df0dd2b1";
+           "Content-Type": "application/json",
+           "x-app-id" : "096abb16",
+           "x-app-key"  : "41039f1fc76e5e5de6484456df0dd2b1"
        }
    } 
 });

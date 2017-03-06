@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
-  app.use('/api/mutritionix', mutritionix);
+  //app.use('/api/mutritionix', mutritionix);
 // app.use('/users', users);
 
 // catch 404 and forward to error handler
