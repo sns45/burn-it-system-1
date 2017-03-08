@@ -24,7 +24,7 @@ angular
             return person;
         }
     })
-    .controller("burnCtrl", ["$scope", burnCtrl]);
+    .controller("burnCtrl", ["$scope", "$location", burnCtrl]);
 
-function burnCtrl($scope) {
+function burnCtrl($scope,$location) {
 };

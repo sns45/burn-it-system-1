@@ -34,10 +34,25 @@ x-app-key   41039f1fc76e5e5de6484456df0dd2b1
 
 x-remote-user-id  096abb16
 
-
+API DOC https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#heading=h.73n49tgew66c
 https://developer.nutritionix.com/
 
 Application id: 096abb16
 Application key: 41039f1fc76e5e5de6484456df0dd2b1
+Example JSON Request 
+
+{
+ "query":"for breakfast i ate 2 eggs, bacon, and french toast",
+ "timezone": "US/Eastern"
+}
+
+
+ideal weigh API
+
+https://bmi.p.mashape.com
+'X-Mashape-Key: pKLWGRrBWomshBDBVnH9yriv891rp1XeJNXjsnTwTYcJWwbLdS' \
+'Content-Type: application/json' \
+Example JSON Request POST
+{"weight":{"value":"85.00","unit":"kg"},"height":{"value":"170.00","unit":"cm"},"sex":"m","age":"24","waist":"34.00","hip":"40.00"}
 
 */

@@ -3,20 +3,19 @@
 (function () {
     angular
         .module("burnIt.planning")
-        .controller("PlanningCtrl", ["CommonSvc", "$location", PlanningCtrl]);
-
-    function PlanningCtrl(CommonSvc, $location) {
+        .controller("PlanningCtrl", ["$scope","CommonSvc", "$location","PlanningDataSvc","$uibModalInstance", PlanningCtrl]);
+ 
+    function PlanningCtrl($scope, CommonSvc, $location,PlanningDataSvc,$uibModalInstance) {
         var vm = this;
         vm.route = route;
         function route(param) {
+         //person = CommonSvc.getPerson();
+            console.log(person);
             switch (param){
                 case 'nutritionists':
                     $location.path('/nutritionists');
                     break;
                 case 'workout':
-                    // save logic
-                    // CommonSvc.set
-                    /*$location.path('/register');*/
                     $location.path('/workout');
                     break;
                 case 'diet':
@@ -33,7 +32,19 @@
                        break;
 
             }
+        };
+        
+        $scope.save = function(){
+        
+            var _req = {"weight":{"value":"85.00","unit":"kg"},"height":{"value":"170.00","unit":"cm"},"sex":"m","age":"24","waist":"34.00","hip":"40.00"};
+            
+            PlanningDataSvc.getBmi(JSON.stringify(_req)).then(function(data)
+              {
+               // $uibModalInstance.close();
+                 console.log(data);
+            }); 
         }
+  
     }
 
 
