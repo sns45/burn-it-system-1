@@ -13,9 +13,20 @@ angular
     .service("CommonSvc", function () {
         var self = this;
         var person;
+        var reqData;
+        self.setReqData = setReqData;
+        self.getReqData  = getReqData;
         self.setPerson = setPerson;
         self.getPerson = getPerson;
-
+        
+        function setReqData(obj) {
+            reqData = obj;
+        }
+    
+        function getReqData() {
+            return reqData;
+        }
+    
         function setPerson(obj) {
             person = obj;
         }

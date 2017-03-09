@@ -3,14 +3,14 @@
 (function () {
     angular
         .module("burnIt.planning")
-        .controller("PlanningCtrl", ["$scope","CommonSvc", "$location","PlanningDataSvc","$uibModalInstance", PlanningCtrl]);
+        .controller("PlanningCtrl", [/*"$scope",*/"CommonSvc", "$location",/*"PlanningDataSvc","$uibModalInstance",*/ PlanningCtrl]);
  
-    function PlanningCtrl($scope, CommonSvc, $location,PlanningDataSvc,$uibModalInstance) {
+    function PlanningCtrl(/*$scope,*/ CommonSvc, $location/*,PlanningDataSvc,$uibModalInstance*/) {
         var vm = this;
         vm.route = route;
         function route(param) {
-         //person = CommonSvc.getPerson();
-            console.log(person);
+         
+            console.log(CommonSvc.getReqData());
             switch (param){
                 case 'nutritionists':
                     $location.path('/nutritionists');
@@ -32,7 +32,7 @@
                        break;
 
             }
-        };
+        }/*;
         
         $scope.save = function(){
         
@@ -43,7 +43,7 @@
                // $uibModalInstance.close();
                  console.log(data);
             }); 
-        }
+        }*/
   
     }
 
