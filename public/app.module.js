@@ -14,11 +14,22 @@ angular
         var self = this;
         var person;
         var reqData;
+        var reqBmi;
+    
+        self.setReqBmi = setReqBmi;
+        self.getReqBmi  = getReqBmi;       
         self.setReqData = setReqData;
         self.getReqData  = getReqData;
         self.setPerson = setPerson;
         self.getPerson = getPerson;
-        
+          
+        function setReqBmi(obj) {
+            reqBmi = obj;
+        }
+    
+        function getReqBmi() {
+            return reqBmi;
+        }
         function setReqData(obj) {
             reqData = obj;
         }

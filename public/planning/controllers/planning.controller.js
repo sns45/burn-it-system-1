@@ -3,14 +3,15 @@
 (function () {
     angular
         .module("burnIt.planning")
-        .controller("PlanningCtrl", [/*"$scope",*/"CommonSvc", "$location",/*"PlanningDataSvc","$uibModalInstance",*/ PlanningCtrl]);
+        .controller("PlanningCtrl", ["$scope","CommonSvc", "$location","$http", PlanningCtrl]);
  
-    function PlanningCtrl(/*$scope,*/ CommonSvc, $location/*,PlanningDataSvc,$uibModalInstance*/) {
+    function PlanningCtrl($scope, CommonSvc, $location, $http) {
         var vm = this;
         vm.route = route;
+
         function route(param) {
-         
-            console.log(CommonSvc.getReqData());
+          //  console.log(CommonSvc.getReqBmi());
+           // $scope.weight = 20KG;
             switch (param){
                 case 'nutritionists':
                     $location.path('/nutritionists');
@@ -32,38 +33,8 @@
                        break;
 
             }
-        }/*;
-        
-        $scope.save = function(){
-        
-            var _req = {"weight":{"value":"85.00","unit":"kg"},"height":{"value":"170.00","unit":"cm"},"sex":"m","age":"24","waist":"34.00","hip":"40.00"};
-            
-            PlanningDataSvc.getBmi(JSON.stringify(_req)).then(function(data)
-              {
-               // $uibModalInstance.close();
-                 console.log(data);
-            }); 
-        }*/
+        }
   
     }
 
-
-
-   // function PlanningCtrl(CommonSvc, $location) {
-      /*  var vm = this;
-        vm.route = route;*/
-        /* vm.workout = {};
-         vm.sendWorkout = sendWorkout;
-          vm.sendNutri = sendNutri;
-        function sendWorkout() {
-                $location.path("/workout");
-
-        };
-        function sendNutri() {
-                $location.path("/nutritionists");
-
-        }
-        */
-
-  //  }
 })();

@@ -3,31 +3,15 @@
 (function () {
     angular
         .module("burnIt.main")
-        .controller("MainCtrl", ["CommonSvc", "$location", MainCtrl]);
+        .controller("MainCtrl", ["CommonSvc", "$location","$http", MainCtrl]);
 
-    /*function MainCtrl(CommonSvc, $location) {
-        var vm = this;
-
-        vm.genders = ["Male", "Female"];
-        vm.person = {};
-        vm.sendPerson = sendPerson;
-
-        function sendPerson() {
-            if (!vm.person.age || vm.person.age < 18 || vm.person.age > 100) {
-                window.alert("You must enter an age between 18 and 100");
-            } else {
-                console.log(vm.person);
-                CommonSvc.setPerson(vm.person);
-                $location.path("/planning");
-            }
-        }  {"weight":{"value":"85.00","unit":"kg"},"height":{"value":"170.00","unit":"cm"},"sex":"m","age":"24"}
-    }*/
-    function MainCtrl(CommonSvc, $location) {
+    function MainCtrl(CommonSvc, $location,$http) {
         var vm = this;
         vm.route = route;
         vm.genders = ["Male", "Female"];
         vm.person = {};
-        vm.reqData = {"weight":{"value":"","unit":"kg"},"height":{"value":" ","unit":"cm"},"sex":"","age":""};
+        var reqData = {"weight":{"value":"","unit":"kg"},"height":{"value":" ","unit":"cm"},"sex":"","age":""};
+        vm.reqBmi = {};
         function route(param) {
             switch (param){
                 case 'login':
@@ -44,17 +28,22 @@
                      window.alert("You must enter an age between 18 and 100");
                  } else {
                     // console.log(vm.person);
-                     vm.reqData.weight.value = vm.person.weight;
-                     vm.reqData.height.value = vm.person.height;
-                     vm.reqData.age = vm.person.age;
+                     CommonSvc.setPerson(vm.person);
+                     reqData.weight.value = vm.person.weight;
+                     reqData.height.value = vm.person.height;
+                     reqData.age = vm.person.age;
                      if (vm.person.gender == "Male"){
-                       vm.reqData.sex = "m"; 
+                       reqData.sex = "m"; 
                      }
                      else{
-                        vm.reqData.sex = "f";  
+                        reqData.sex = "f";  
                      }
-                     CommonSvc.setReqData(vm.reqData);
-                     CommonSvc.setPerson(vm.person);
+                     
+                      $http.post('/api/main/bmi', reqData).then(function(response){
+                      console.log(JSON.stringify(response));
+                      CommonSvc.setReqBmi(response);   
+                      });
+                     
                      $location.path("/planning");
                  }
                     break;

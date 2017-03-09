@@ -1,11 +1,16 @@
  var express = require('express');
  var router = express.Router();
  var request = require("request");
+ var empty  = require('is-empty');
 
 
  router.post('/bmi', function(req, res){
- 
-        var resObj ={
+       if(empty(req.body.height.value)  || empty(req.body.weight.value)  || empty(req.body.sex)  ||  empty(req.body.age )){
+           
+            res.send(405, "Please make sure that the height, weight, sex and age values are enter. ");                                            
+       }
+        else{
+            var resObj ={
         url: "https://bmi.p.mashape.com",
         method:'POST',
         json: req.body,
@@ -18,9 +23,11 @@
        if(error){
            res.send(response.statusCode);
        }else{
+           console.log(body);
            res.send(response.statusCode, body);
        }   
-    });     
+    });
+        }     
  });
 module.exports = router;
 

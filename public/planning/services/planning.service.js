@@ -4,13 +4,21 @@
        app.service("PlanningDataSvc", function($http){
            var self = this;
            
-           self.getBmi = function(userInfo){
-             return $http.post('/api/main/bmi', userInfo).then(function(response){
-                 
-                 return response;
-             })  
-           };
+           self.bmiObject = [];
            
-       })
+           self.getBmi = function(userInfo){
+             return $http.post("/api/main/bmi", 
+                userInfo).then(function(response){
+                 console.log(response);
+                 return response;
+             });  
+           }
+           self.setBmiObject = function(bmi){
+               this.bmiObject = bmi;
+           }
+           self.getBmiObject = function(){
+               return this.bmiObject;
+           }
+       });
      
 })();
