@@ -12,6 +12,8 @@
         vm.person = {};
         vm.reqData = {"weight":{"value":"","unit":"kg"},"height":{"value":" ","unit":"cm"},"sex":"","age":""};
         vm.reqBmi = {};
+      //  vm.queryFood = {"query":"for breakfast i ate 2 eggs, bacon, and french toast"};
+        
         function route(param) {
             switch (param){
                 case 'login':

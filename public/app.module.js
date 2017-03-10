@@ -15,14 +15,25 @@ angular
         var person;
         var reqData;
         var reqBmi;
-    
+        var numberOfCal;
+      
+        self.setNumberOfCal = setNumberOfCal;
+        self.getNumberOfCal  = getNumberOfCal;
         self.setReqBmi = setReqBmi;
         self.getReqBmi  = getReqBmi;       
         self.setReqData = setReqData;
         self.getReqData  = getReqData;
         self.setPerson = setPerson;
         self.getPerson = getPerson;
-          
+        
+        function setNumberOfCal(obj) {
+            numberOfCal = obj;
+        }
+    
+        function getNumberOfCal() {
+            return numberOfCal;
+        }
+    
         function setReqBmi(obj) {
             reqBmi = obj;
         }
