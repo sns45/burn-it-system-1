@@ -16,6 +16,7 @@ angular
         var reqData;
         var reqBmi;
         var numberOfCal;
+        var foodtrack;
       
         self.setNumberOfCal = setNumberOfCal;
         self.getNumberOfCal  = getNumberOfCal;
@@ -25,7 +26,16 @@ angular
         self.getReqData  = getReqData;
         self.setPerson = setPerson;
         self.getPerson = getPerson;
-        
+        self.setFoodtrack = setFoodtrack;
+        self.getFoodtrack = getFoodtrack;
+    
+        function setFoodtrack(obj) {
+            foodtrack = obj;
+        }
+    
+        function getFoodtrack() {
+            return foodtrack;
+        }  
         function setNumberOfCal(obj) {
             numberOfCal = obj;
         }

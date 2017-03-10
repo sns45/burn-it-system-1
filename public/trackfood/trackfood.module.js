@@ -7,5 +7,10 @@
                 controller: "TrackFoodCtrl",
                 controllerAs: "vm"
             });
+            $routeProvider.when("/nutritionfacts/details", {
+                templateUrl: "trackfood/views/nutritionfact.html",
+                controller: "NutritionFactCtrl",
+                controllerAs: "vm"
+            });
         }])
 })();

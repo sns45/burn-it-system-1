@@ -67,38 +67,7 @@
                         vm.numCal = parseInt(cal);
                     }
                 });
-                /*for (var x = 0; x < 2; x++) {
-                    if (x < 1) {
-                        queryFood.query = vm.food;
-                        obj = JSON.stringify(queryFood);
-                    }
-                    else {
-                        if (obj == null) {}
-                        else {
-                            
-                            $http.post('/api/nutritionix/deit', obj).then(function (response) {
-                                for (var i = 0; i <response.data.foods.length; i++) {
-                                    
-                                    if(response.data.foods[i].nf_calories == null ||response.data.foods[i].nf_calories == ""){
-                                      
-                                    }else{
-                                     cal = parseInt(cal)  + parseInt(response.data.foods[i].nf_calories);     
-                                    }
-                                
-                                } 
-                                 if (cal > 500 || vm.totalCal > 500){
-                                     
-                                 window.alert("You reatch the Maximum number of Calories");  
-                                     
-                                 }else{
-                                   vm.numCal = parseInt(vm.numCal) + parseInt(cal);  
-                                 }
-                                
-                            });
-                        }
-                        break;
-                    }
-                }*/
+                
                 $location.path('/deit/daily');
                 break;
             }

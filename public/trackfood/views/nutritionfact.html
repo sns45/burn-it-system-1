@@ -1,0 +1,76 @@
+<div class="maincontainer">
+    <div >
+        <section class="performance-facts">
+            <header class="performance-facts__header">
+                <h1 class="performance-facts__title">Nutrition Facts</h1>
+                <h5 >Food : <p1 ng-bind="vm.food_name"></p1> </h5>
+                <p>Serving Size <p1 ng-bind="vm.serving_qty"></p1> <p1 ng-bind="vm.serving_unit"></p1> (about <p1 ng-bind="vm.serving_weight_grams"></p1>g)
+                    <p>Serving Per Container 8</p>
+            </header>
+            <table class="performance-facts__table">
+                <thead>
+                    <tr>
+                        <th colspan="3" class="small-info"> <h6>Amount Per Serving </h6></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="2"> <b>Calories</b> <p1 ng-bind="vm.nf_calories"></p1> </th>
+                       <!-- <td> Calories from Fat 130 </td>-->
+                    </tr>
+                    <tr class="thick-row">
+                        <td colspan="3" class="small-info"> <b><h5>% Daily Value*</h5></b> </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"> <b>Total Fat</b><p1 ng-bind="vm.nf_total_fat"></p1>g </th>
+                        <!--<td> <b><p1 ng-bind="vm.nf_total_fat"></p1>22%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <td class="blank-cell"> </td>
+                        <th> Saturated Fat <p1 ng-bind="vm.nf_saturated_fat"></p1>g </th>
+                        <!--<td> <b>22%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <td class="blank-cell"> </td>
+                        <th> Trans Fat <p1 ng-bind="vm.nf_trans_fat"></p1>g </th>
+                        <!--<td> </td>-->
+                    </tr>
+                    <tr>
+                        <th colspan="2"> <b>Cholesterol</b> <p1 ng-bind="vm.nf_cholesterol"></p1>mg </th>
+                        <!--<td> <b>18%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <th colspan="2"> <b>Sodium</b> <p1 ng-bind="vm.nf_sodium"></p1>mg </th>
+                        <!--<td> <b>2%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <th colspan="2"> <b>Total Carbohydrate</b> <p1 ng-bind="vm.nf_total_carbohydrate"></p1>g </th>
+                        <!--<td> <b>6%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <td class="blank-cell"> </td>
+                        <th> Dietary Fiber <p1 ng-bind="vm.nf_dietary_fiber"></p1>g </th>
+                        <!--<td> <b>4%</b> </td>-->
+                    </tr>
+                    <tr>
+                        <td class="blank-cell"> </td>
+                        <th> Sugars <p1 ng-bind="vm.nf_sugars"></p1>g </th>
+                        <!--<td> </td>-->
+                    </tr>
+                    <tr class="thick-end">
+                        <th colspan="2"> <b>Protein</b> <p1 ng-bind="vm.nf_protein"></p1>g </th>
+                        <!--<td> </td>-->
+                    </tr>
+                </tbody>
+            </table>
+            <p class="small-info"><h6>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs: </h6></p>
+            <button type="button" class="btn btn-primary" ng-click="vm.route('back')">Back</button>
+            
+        </section>
+    </div>
+    <div>
+      <img ng-src="{{vm.thumb}}">
+      <img ng-src="{{vm.highres}}">
+    </div>
+    
+</div>
