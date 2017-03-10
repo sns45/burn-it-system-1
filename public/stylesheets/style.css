@@ -386,7 +386,12 @@ td {
     padding: 16px !important;
     /*normalize.scss was overrriding padding to be 0*/
 }
-
+.tbresults{
+   border: 1px solid black; 
+    padding: 16px !important;
+    width: 550px;
+    
+}
 .user-image {
     width: 120px;
     height: 120px;

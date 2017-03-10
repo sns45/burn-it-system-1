@@ -16,7 +16,6 @@ angular
         var reqData;
         var reqBmi;
     
-    
         self.setReqBmi = setReqBmi;
         self.getReqBmi  = getReqBmi;       
         self.setReqData = setReqData;
