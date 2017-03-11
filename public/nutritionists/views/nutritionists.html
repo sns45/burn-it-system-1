@@ -8,7 +8,7 @@
         <table class="nutritionist-list-table">
             <thead>
                 <tr>
-                    <th class="thTable">Name</th>
+                    <th class="thTable"  >Name</th>
                     <th class="thTable">Address</th>
                     <th class="thTable">Telephone</th>
                     <th class="thTable">Select</th>
@@ -16,21 +16,21 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="tdTable">John Doe</td>
-                    <td class="tdTable">12 Bergen Street NY 10082</td>
-                    <td class="tdTable">356-783-2345</td>
+                    <td class="tdTable" ng-bind="vm.mame">John Doe</td>
+                    <td class="tdTable" ng-bind="vm.address">12 Bergen Street NY 10082</td>
+                    <td class="tdTable" ng-bind="vm.phonenumber">356-783-2345</td>
                     <td class="tdTable">
                         <input type="checkbox" name="nutritionist-checkbox-1" id="nutritionist-checkbox-1" class="nutritionist-checkbox">
                     </td>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td class="tdTable">Jack Sue</td>
                     <td class="tdTable">2 West Madision Street Bayonne NJ 07002</td>
                     <td class="tdTable">450-902-3512</td>
                     <td class="tdTable">
                         <input type="checkbox" name="nutritionist-checkbox-2" id="nutritionist-checkbox-2" class="nutritionist-checkbox">
                     </td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
     </div>
