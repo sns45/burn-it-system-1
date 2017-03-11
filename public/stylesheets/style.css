@@ -237,7 +237,7 @@ p {
 }
 
 .loginbloc {
-    width: 300px;
+    width: 350px;
     height: 400px;
     padding-top: 10px;
     margin-top: 40px;
@@ -304,8 +304,8 @@ p {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 750px;
-    height: 550px;
+    width:800px;
+    height: 750px;
     border-style: solid;
     border-color: #7EA6E0;
     border-width: 25px;
@@ -785,13 +785,13 @@ p {
     top: 10%;
     left: 30%;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     height: 500px;
 }
 
 #textbox2 {
     height: 10%;
-    width: inherit;
+    width: 350px;
     margin-bottom: 5px;
 }
 

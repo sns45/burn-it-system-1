@@ -22,11 +22,17 @@
     angular
         .module("burnIt.nutritionists")
         .controller("NutritionistsCtrl", ["CommonSvc", "$location", NutritionistsCtrl]);
-
+     
     function NutritionistsCtrl(CommonSvc, $location) {
         var vm = this;
-
         vm.route = route;
+        
+        (function () {  
+           vm.mame = "Janet Williams";
+           vm.address ="12 Bergen Street NY 10082";
+           vm.phonenumber= "347-890-3787";
+        })();
+        
         function route(param) {
             switch (param){
                 case 'Back':
