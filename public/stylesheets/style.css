@@ -382,7 +382,9 @@ p {
 
 .save-plan,
 .save-nutritionist,
-.save-work-out-plan {
+.save-work-out-plan,
+.save-nutritionists-setting,
+.edit-nutritionists-list {
     border-radius: 5px;
     background-color: #008CFF;
     color: #FFF;
@@ -983,4 +985,15 @@ p {
 
 .nutriFactCont{
   margin-left: 200px;
+}
+
+.edit-nutritionists-list {
+    background: -webkit-linear-gradient(#F7C8C6, #B85450);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F7C8C6, #B85450);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F7C8C6, #B85450);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F7C8C6, #B85450);
+    /* Standard syntax */
 }
