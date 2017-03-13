@@ -34,10 +34,12 @@
         <input type="button" value="SignOut" ng-click="vm.route('SignOut')">
          <div class="choose-fitness-method-buttons-container">
              <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()">
+                 <!-- <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()"> -->
+                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.route('ProfileNutritionists')">
              </div>
              <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan">
+                 <!-- <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan"> -->
+                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan" ng-click="vm.route('ProfileDietPlan')">
              </div>
          </div>
          <div class="choose-fitness-method-buttons-container">
