@@ -17,7 +17,10 @@ angular
         var reqBmi;
         var numberOfCal;
         var foodtrack;
-      
+        var personData ={"first_name":"", "last_name":"","age":"","gender":"","height":"","weight":"","zip_code":""};
+    
+        self.setPersonData = setPersonData;
+        self.getPersonData = getPersonData;
         self.setNumberOfCal = setNumberOfCal;
         self.getNumberOfCal  = getNumberOfCal;
         self.setReqBmi = setReqBmi;
@@ -28,6 +31,16 @@ angular
         self.getPerson = getPerson;
         self.setFoodtrack = setFoodtrack;
         self.getFoodtrack = getFoodtrack;
+    
+    
+       function setPersonData(obj) {
+            personData = obj;
+        }
+    
+        function getPersonData() {
+            return personData;
+        }
+    
     
         function setFoodtrack(obj) {
             foodtrack = obj;
