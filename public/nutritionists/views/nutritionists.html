@@ -11,26 +11,18 @@
                     <th class="thTable"  >Name</th>
                     <th class="thTable">Address</th>
                     <th class="thTable">Telephone</th>
+                    <th class="thTable">Rating</th>
                     <th class="thTable">Select</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="tdTable" ng-bind="vm.mame">John Doe</td>
-                    <td class="tdTable" ng-bind="vm.address">12 Bergen Street NY 10082</td>
-                    <td class="tdTable" ng-bind="vm.phonenumber">356-783-2345</td>
-                    <td class="tdTable">
-                        <input type="checkbox" name="nutritionist-checkbox-1" id="nutritionist-checkbox-1" class="nutritionist-checkbox">
-                    </td>
+                <tr ng-repeat="obj in vm.businessesArray">
+                    <td class="tdTable">{{obj.name}}</td>
+                    <td class="tdTable">{{obj.location.display_address[0]}} {{obj.location.display_address[1] }}</td>
+                    <td class="tdTable">{{obj.display_phone}}</td>
+                    <td class="tdTable"><img ng-src="{{obj.rating}}"></td>
+                    <td class="tdTable"><input type="checkbox" ng-click="vm.selectFunction(obj)"></td>
                 </tr>
-                <!--<tr>
-                    <td class="tdTable">Jack Sue</td>
-                    <td class="tdTable">2 West Madision Street Bayonne NJ 07002</td>
-                    <td class="tdTable">450-902-3512</td>
-                    <td class="tdTable">
-                        <input type="checkbox" name="nutritionist-checkbox-2" id="nutritionist-checkbox-2" class="nutritionist-checkbox">
-                    </td>
-                </tr>-->
             </tbody>
         </table>
     </div>

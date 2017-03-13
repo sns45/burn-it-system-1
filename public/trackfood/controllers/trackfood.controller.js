@@ -1,24 +1,47 @@
 "use strict";
 (function () {
-    angular.module("burnIt.trackfood").controller("TrackFoodCtrl", ["CommonSvc", "$location", TrackFoodCtrl]);
+    angular.module("burnIt.trackfood").controller("TrackFoodCtrl", ["CommonSvc", "$location", "$uibModal", TrackFoodCtrl]);
 
-    function TrackFoodCtrl(CommonSvc, $location) {
+    function TrackFoodCtrl(CommonSvc, $location, $uibModal) {
         var vm = this;
+        vm.example = example;
         vm.route = route;
-        var queryFood = {
-                    "query": ""
-                };
+        vm.viewSearchResultsModal = viewSearchResultsModal;
+
+
+
+        function example(s) {
+            console.log(s);
+            // API call here
+            //            CommonSvc.setFoodtrack(s);
+        }
+
         function route(param) {
             switch (param) {
-            case 'search':
-                queryFood.query = vm.food;
-                CommonSvc.setFoodtrack(queryFood);
-                $location.path('/nutritionfacts/details');
-                break;
-            case 'back':
-                $location.path('/planning');
-                break;
+                case 'back':
+                    $location.path('/planning');
+                    break;
             }
         }
+
+        function viewSearchResultsModal() {
+            var queryFood = {
+                "query": vm.food
+            };
+            var modalInstance = $uibModal.open({
+                templateUrl: '/trackfood/views/nutritionfact.html',
+                controller: 'NutritionFactCtrl',
+                controllerAs: 'vm',
+                size: 'lg',
+                resolve: {
+                    callerData: function () {
+                        return {
+                            "query": queryFood
+                        };
+                    }
+                }
+            });
+        }
+
     }
 })();

@@ -1,49 +1,60 @@
-
 "use strict";
 
 (function () {
     angular
         .module("burnIt.nutritionists")
-        .controller("NutritionistsCtrl", ["CommonSvc", "$location","$http", NutritionistsCtrl]);
-     
-    function NutritionistsCtrl(CommonSvc, $location,$http) {
+        .controller("NutritionistsCtrl", ["CommonSvc", "$location", "$http", NutritionistsCtrl]);
+
+    function NutritionistsCtrl(CommonSvc, $location, $http) {
         var vm = this;
         vm.route = route;
+        vm.selectFunction = selectFunction;
         var url = "";
-        var data ;
-        (function () {  
-           //vm.rating ="./../document/stars/2Stars.jpg";
-          //  vm.rating =$location(2Stars.jpg);
+        var data;
+        (function () {
+            //vm.rating ="./../document/stars/2Stars.jpg";
+            //  vm.rating =$location(2Stars.jpg);
         })();
-        
-        (function () {  
-            
-            for (var x=0; x<2; x++){
-                if(x < 1){
-                  url = "/api/main/yelp/nutritionists/location/" + CommonSvc.getPersonData()['zip_code'] ;
-                }
-                else {
-                    if (url==null|| url==""){ 
+
+        (function () {
+
+            for (var x = 0; x < 2; x++) {
+                if (x < 1) {
+                    if (CommonSvc.getPersonData()['zip_code'])
+                    url = "/api/main/yelp/nutritionists/location/" + CommonSvc.getPersonData()['zip_code'];
+                } else {
+                    if (!CommonSvc.getPersonData()['zip_code']) {
                         console.log("THE URL IS NULL");
+                        $location.path('/');
+                    } else {
+                        $http.get(url).then(function (response) {
+                            console.log(response.data.businesses);
+                            if (response.data.businesses.length > 5) {
+                                response.data.businesses.splice(5, response.data.businesses.length);
+                                vm.businessesArray = response.data.businesses;
+                                vm.businessesArray.forEach(function(value) {
+                                    ratingFunc(value);
+                                });
+                                console.log(vm.businessesArray);
+                            } else {
+                                vm.businessesArray = response.data.businesses;
+                            }
+                            return response;
+                        });
                     }
-                    else{
-                $http.get(url).then(function (response) {
-               
-                //ratingfunc(response.data.businesses[0].rating)      
-                vm.mame =  response.data.businesses[0].name;
-                vm.address = response.data.businesses[0].location.display_address[0]+" "+response.data.businesses[0].location.display_address[1];
-                vm.phonenumber = response.data.businesses[0].display_phone;
-                return response;
-                }); 
-                    }
-                
+
                 }
             }
-                
+
         })();
-     
+
+        function selectFunction(obj) { // Might want to rename
+            console.log(obj);
+//            vm.selected = //obj you select
+        }
+        
         function route(param) {
-            switch (param){
+            switch (param) {
                 case 'Back':
                     $location.path('/planning');
                     break;
@@ -52,29 +63,29 @@
                     break;
             }
         }
-        
-        function ratingfunc(rate){
-            
-            if(rate ==5){
-                vm.rating="document/stars/5Stars.jpg";
+
+        function ratingFunc(value) {
+
+            if (value.rating == 5) {
+                value.rating = "../../documents/stars/5Stars.png";
             }
-            if(rate ==4.5){
-                vm.rating="document/stars/4.5Stars.jpg";
+            if (value.rating == 4.5) {
+                value.rating = "../../documents/stars/4.5Stars.png";
             }
-            if(rate ==4){
-                vm.rating="document/stars/4Stars.jpg";
+            if (value.rating == 4) {
+                value.rating = "../../documents/stars/4Stars.png";
             }
-            if(rate ==3.5){
-                vm.rating="document/stars/3.5Stars.jpg";
+            if (value.rating == 3.5) {
+                value.rating = "../../documents/stars/3.5Stars.png";
             }
-            if(rate ==3){
-                vm.rating="document/stars/3Stars.jpg";
+            if (value.rating == 3) {
+                value.rating = "../../documents/stars/3Stars.png";
             }
-            if(rate ==2.5){
-                vm.rating="document/stars/2.5Stars.jpg";
+            if (value.rating == 2.5) {
+                value.rating = "../../documents/stars/2.5Stars.png";
             }
-            if(rate ==2){
-                vm.rating="document/stars/2Stars.jpg";
+            if (value.rating == 2) {
+                value.rating = "../../documents/stars/2Stars.png";
             }
         }
 

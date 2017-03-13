@@ -76,10 +76,14 @@
                  }
                     break;
                  case 'bmi':
-                 /*if (!vm.person.age || vm.person.age < 18 || vm.person.age > 100) {
+                    
+                if (vm.person.age == undefined || vm.person.gender == undefined|| vm.person.height == undefined|| vm.person.weight == undefined|| vm.person.zipcode == undefined) {
+                        window.alert("You must enter your Zip Code, Age, Gender, Weight and Height to continue");
+                        $location.path('/');
+                    }else{
+                        if (!vm.person.age || vm.person.age < 18 || vm.person.age > 100) {
                      window.alert("You must enter an age between 18 and 100");
-                 } else {*/
-                     
+                 } else { 
                      CommonSvc.setPerson(vm.person);
                      personData.age = vm.person.age;
                      personData.gender = vm.person.gender;
@@ -101,7 +105,10 @@
                       CommonSvc.setReqData(vm.reqData);  
                      
                      $location.path("/planning");
-                // }
+                 }
+                        
+                    }
+                 
                     break;
             }
         }

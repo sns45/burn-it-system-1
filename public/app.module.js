@@ -12,7 +12,7 @@ angular
     ])
     .service("CommonSvc", function () {
         var self = this;
-        var person;
+        var person = {"zipcode":"07305","weight":"80","height":"190","gender":"m","age":"27"};
         var reqData;
         var reqBmi;
         var numberOfCal;

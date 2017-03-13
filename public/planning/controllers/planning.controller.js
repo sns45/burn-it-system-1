@@ -19,7 +19,9 @@
                      obj = JSON.stringify(CommonSvc.getReqData()) ;
                 }
                 else {
-                    if (obj==null){
+                    if (obj == null || obj == undefined) {
+                        console.log("please enter the zip code, and user informations");
+                        $location.path('/');
                     }
                     else{
                 $http.post('/api/main/bmi', obj ).then(function (response) {

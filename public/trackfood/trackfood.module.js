@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    angular.module("burnIt.trackfood", ["ngRoute"])
+    angular.module("burnIt.trackfood", ["ngRoute", "ui.bootstrap"])
         .config(["$routeProvider", function ($routeProvider) {
             $routeProvider.when("/nutritionfacts", {
                 templateUrl: "trackfood/views/trackfood.html",

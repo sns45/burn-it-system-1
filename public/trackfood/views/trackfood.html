@@ -1,4 +1,3 @@
-
 <div class="maincontainer">
     <div class="workout-option">
         <div class="title-container">
@@ -8,24 +7,14 @@
             </div>
         </div>
         <div class="innerwhitebox">
-         <input type="text" class="foodname" ng-model="vm.food">
-         <!--<label class="maxcalorieslabel">Total max{500}calories</label>-->
-         <!--<div class="caloriebox"></div>-->
-         <input type="button" class="searchbutton" value="Search" ng-click="vm.route('search')">
+            <input type="text" class="foodname" ng-model="vm.food" ng-change="vm.example(vm.food)">
+            <!--<label class="maxcalorieslabel">Total max{500}calories</label>-->
+            <!--<div class="caloriebox"></div>-->
+            <input type="button" class="searchbutton" value="Search" ng-click="vm.viewSearchResultsModal()">
             <input type="button" class="searchbutton2" value="Back" ng-click="vm.route('back')">
-         <!--<div class="contentcaloriebox">-->
-         </div>
-          
-       </div>
- <!--   <div class="deitbuttons">
-       <div class="save-plan-button save-personal-trainer-button-container">
-        <div class="save-plan-wrapper save-personal-trainer-wrapper">
-          <input type="button" value="Save" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('save')">
-          <input type="button" value="Preview" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('preview')">
-          <input type="button" value="Edit" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('edit')">
-          <input type="button" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('back')">
+            <!--<div class="contentcaloriebox">-->
         </div>
+
     </div>
-    </div>-->
-    </div>
+   
 </div>
