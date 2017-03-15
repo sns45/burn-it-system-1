@@ -11,19 +11,19 @@
         var weekData;
         (function () {
             vm.weekArray = [{
-                'day': 'Monday'
+                "day": "Monday"
             }, {
-                'day': 'Tuesday'
+                "day": "Tuesday"
             }, {
-                'day': 'Wednesday'
+                "day": "Wednesday"
             }, {
-                'day': 'Thursday'
+                "day": "Thursday"
             }, {
-                'day': 'Friday'
+                "day": "Friday"
             }, {
-                'day': 'Saturday'
+                "day": "Saturday"
             }, {
-                'day': 'Sunday'
+                "day": "Sunday"
             }];
             for (var x = 0; x < 2; x++) {
                 if (x < 1) {
@@ -42,12 +42,14 @@
             }
         })();
         (function () { 
-            console.log("I am here");
            weekData = CommonSvc.getWeekData();        
             })();
         
         vm.go = function (obj) {
           week = obj ;
+          //  console.log(obj);
+          //  console.log(obj.day)
+          //  console.log(week.day === "Monday");
         };
 
         function route(param) {
@@ -98,7 +100,7 @@
                         callerData: function () {  
                             return {
                                 "maxCal": 500,
-                                 "day"   :JSON.stringify(week.day),
+                                 "day"   :week.day,
                                  "meal"  :"breakfast"
                             };
                         }
@@ -117,7 +119,7 @@
                         callerData: function () {  
                             return {
                                 "maxCal": 200,
-                                "day"   :JSON.stringify(week.day)
+                                 "day"   :week.day
                                 ,"meal"  :"firstSnack" 
                             };
                         }
@@ -136,7 +138,7 @@
                         callerData: function () {  
                             return {
                                 "maxCal": 500,
-                                "day"   :JSON.stringify(week.day)
+                                "day"   :week.day
                                 ,"meal"  :"lunch"
                             };
                         }
@@ -155,7 +157,7 @@
                         callerData: function () {  
                             return {
                                 "maxCal": 200,
-                                "day"   :JSON.stringify(week.day)
+                                "day"   :week.day
                                 ,"meal"  :"secondSnack"
                             };
                         }
@@ -173,7 +175,7 @@
                         callerData: function () {  
                             return {
                                 "maxCal": 500,
-                                "day"   :JSON.stringify(week.day)
+                                "day"   :week.day
                                 ,"meal"  :"diner"
                             };
                         }
