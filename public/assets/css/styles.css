@@ -1,0 +1,221 @@
+div#maincontainer.container{
+  align-items:center;
+  text-align:center;
+}
+
+div#welcome-inputs.row{
+  margin:20px;
+}
+
+div#welcomecontainer.container{
+  text-align:center;
+}
+
+button.btn.btn-default.dropdown-toggle{
+  width:180px;
+}
+
+#planningtablecontainer div.container{
+  text-align:center;
+  border:20px solid;
+}
+
+table.table.table-bordered{
+  text-align:left;
+}
+
+button.btn.btn-default{
+  text-align:center;
+  margin-bottom:20px;
+  padding:40;
+}
+
+button.btn.btn-default{
+  font-size:20px;
+}
+
+button.btn.btn-default{
+  text-align:center;
+  font-size:20px;
+}
+
+ul.dropdown-menu{
+  text-align:center;
+}
+
+ul.dropdown-menu{
+  right:0;
+}
+
+button#savebutton.btn.btn-success.btn-lg{
+  margin-bottom:15px;
+}
+
+@media (max-width:767px) {
+  button#savebutton.btn.btn-success.btn-lg{
+  }
+}
+
+@media (max-width:767px) {
+  h3{
+    font-size:large;
+  }
+}
+
+#savebutton{
+  margin-bottom:15px;
+}
+
+@media (max-width:991px) {
+  div#dietbuttons.container{
+    margin-top:200px;
+  }
+}
+
+input#maxcaloriestext{
+  width:100%;
+  height:100%;
+  display:inline;
+}
+
+input#foodinput.input-lg{
+  margin-bottom:50px;
+  margin-top:50px;
+  padding:20px;
+  width:100%;
+  text-align:center;
+  height:50%;
+}
+
+button#searchfoodbutton.btn.btn-default{
+  width:100%;
+  height:100%;
+}
+
+div#foodcalorieinput.col-md-3.col-md-offset-2{
+  width:100%;
+  height:100%;
+}
+
+input#foodcalorieinput.input-lg{
+  width:100%;
+  height:100%;
+  display:inline;
+}
+
+button#addbutton.btn.btn-default.btn-lg{
+  width:100%;
+  height:100%;
+}
+
+div#dietsearchcontainer.container{
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+@media (max-width:767px) {
+  input#foodinput.input-lg{
+    margin:10%;
+    margin-left:auto;
+    width:100%;
+  }
+}
+
+@media (max-width:767px) {
+  input#foodcalorieinput.input-lg{
+    margin-bottom:10%;
+  }
+}
+
+button#genderdropdown.btn.btn-default.btn-sm.dropdown-toggle{
+}
+
+button#genderdropdown.btn.btn-default.btn-xs.dropdown-toggle{
+  font-size:small;
+  margin-bottom:10px;
+}
+
+h3#Signinlabel{
+  text-align:left;
+}
+
+button#signinbutton.btn.btn-default{
+  margin-top:20px;
+  text-align:center;
+}
+
+a#forgotpasswordlink{
+  text-align:left;
+  left:0;
+  font-size:large;
+}
+
+img#profileimg{
+  height:100px;
+}
+
+@media (min-width:800px) {
+  div#planningtablecontainer.container{
+    width:60%;
+    padding:10px;
+    border:10px outset #2196f3;
+    margin-bottom:10px;
+  }
+}
+
+@media (min-width:800px) {
+  div#dietsearchcontainer.container{
+    width:60%;
+    border:10px outset #2196f3;
+  }
+}
+
+@media (min-width:800px) {
+  div#saveprevieweditbackbuttoncontainer.container{
+    width:60%;
+  }
+}
+
+@media (min-width:800px) {
+  div#maincontainer.container{
+    width:60%;
+    border:10px outset #2196f3;
+    margin-bottom:10px;
+  }
+}
+
+@media (min-width:800px) {
+  div#dietbuttons.container{
+    width:60%;
+  }
+}
+
+@media (min-width:800px) {
+  button.btn.btn-default{
+    font-size:medium;
+  }
+}
+
+label{
+  font-size:large;
+  margin:10px;
+  text-align:left;
+}
+
+hr{
+  margin:1px;
+}
+
+@media (min-width:800px) {
+  div#backbuttoncontainer.container{
+    width:60%;
+  }
+}
+
+@media (min-width:800px) {
+  div#signincontainer.container{
+    width:40%;
+    border:10px outset #2196f3;
+  }
+}
+
