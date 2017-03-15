@@ -15,7 +15,22 @@
                 <input type="button" value="Lunch Max 500 Calories " name="lunch" class="lunch" ng-click="vm.route('LN')">
                 <input type="button" value="Second Snack Max 200 calories" name="ssnack" class="secondsnack" ng-click="vm.route('SS')">
                 <input type="button" value="Dinner Max 500 Calories" name="diner" class="dinner" ng-click="vm.route('DN')"> </div>
-            <div class="vertical-menu"> <a class="active">Week</a> <a ng-class="vm.customStyle.colorClass" ng-click="vm.route('M')">Monday</a> <a>Tuesday</a> <a>Wednesday</a> <a>Thursday</a> <a>Friday</a> <a>Satursday</a> <a>Sunday</a> </div>
+            <div class="vertical-menu">
+
+            <table  class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="active">Week's days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="obj in vm.weekArray" ng-click="vm.go(obj)">
+                    <td ng-class="vm.customStyle.colorClass">{{obj.day}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+            </div>
         </div>
         <div class="deitbuttons2">
             <div class="save-plan-wrapper save-personal-trainer-wrapper">

@@ -10,20 +10,15 @@
          <input type="text" class="foodname" ng-model="vm.food">
          <label class="maxcalorieslabel">Max calories <p1 ng-bind="vm.maxCal"></p1> </label>
          <div class="caloriebox" ng-bind="vm.totalCal"> </div>
-         <input type="button" class="searchbutton" value="Search" ng-click="vm.route('search')">
+         <input type="button" class="searchbutton" value="#Calories" ng-click="vm.route('search')">
          <div class="contentcaloriebox" ng-bind="vm.numCal">
          </div>
-          <input type="button" class="addbutton" value="ADD" ng-click="vm.route('add')">
+        <input type="button" value="Save" name="save-personal-trainer" class="savecalbutton" ng-click="vm.close()">    
+        <input type="button" class="addbutton" value="Add" ng-click="vm.route('add')">
+            
        </div>
         <div class="deitbuttons">
-       <div class="save-plan-button save-personal-trainer-button-container">
-        <div class="save-plan-wrapper save-personal-trainer-wrapper">
-          <input type="button" value="Save" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('save')">
-          <input type="button" value="Preview" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('preview')">
-          <input type="button" value="Edit" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('edit')">
-          <input type="button" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('back')">
-        </div>
-    </div>
+       
     </div>
     </div>
 </div>

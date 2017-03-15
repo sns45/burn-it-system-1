@@ -1,0 +1,40 @@
+{
+  "profile" :{
+        "first_name":"",
+		"last_name":"",
+		"age"      :"",
+		"height"    :"",
+		"weight"   :"",
+		"gender"   :"",
+        "email"   :"",
+        "password"   :"",
+		"address" :[],
+        "photo": {
+        "thumb": ""
+      }		
+    },
+    "planning":{
+	    "status":"",
+		"risk":"",
+		"current_weigth":"",
+		"ideal_weight":""
+	 },
+	 "nutritionists":[
+	     {
+		  "name":"",
+		  "address":"",
+		  "phone_number":""
+		 }
+	 ],
+	 "work_out":[ 
+        {
+		  "name":"",
+		  "address":"",
+		  "phone_number":""
+		 }
+    ],
+	  "deit":[
+		
+	  ]
+
+}

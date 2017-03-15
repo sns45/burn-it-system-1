@@ -4,7 +4,9 @@
 .tdTable {
     border: 1px solid black;
 }
-
+.table table-hover tbody tr.highlight td {
+    background-color: red;
+}
 .thTable,
 .tdTable {
     padding: 16px !important;
@@ -341,6 +343,23 @@ p {
     margin-bottom: auto;
     width: 1050px;
     height: 550px;
+    border-style: solid;
+    border-color: #7EA6E0;
+    border-width: 25px;
+    margin-top: 50px;
+    top: 30px;
+}
+.maincontainer4 {
+    border: 2px solid #a1a1a1;
+    /*padding: 120px 40px;*/
+    padding-top: 50px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 550px;
+    height: 650px;
     border-style: solid;
     border-color: #7EA6E0;
     border-width: 25px;
@@ -693,6 +712,19 @@ p {
     border: 2px solid #000000;
     top: 87%;
     left: 52%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+.savecalbutton {
+    border-radius: 5px;
+    position: absolute;
+    background: #008CFF;
+    font: 16px;
+    color: white;
+    border: 2px solid #000000;
+    top: 87%;
+    left: 25%;
     height: 11%;
     width: 20%;
     text-decoration-color: white;

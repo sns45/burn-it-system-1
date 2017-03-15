@@ -49,7 +49,7 @@
         function route(param) {
             switch (param) {
                 case 'back':
-                    $location.path('/nutritionfacts');
+                    $location.path('/trackfoods');
                     break;
             }
         }

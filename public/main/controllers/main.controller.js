@@ -10,11 +10,16 @@
         vm.route = route;
         vm.genders = ["Male", "Female"];
         vm.person = {};
-        vm.reqData = {"weight":{"value":"","unit":"kg"},"height":{"value":" ","unit":"cm"},"sex":"","age":""};
-         var personData ={"first_name":"", "last_name":"","age":"","gender":"","height":"","weight":"","zip_code":""};
-        vm.reqBmi = {};
-      //  vm.queryFood = {"query":"for breakfast i ate 2 eggs, bacon, and french toast"};
-        
+        var userPath = '../../documents/objects/userObject.json';
+        var userObject ; 
+        (function () {  
+           $http.get('../../documents/objects/userObject.json').then(function (response) {
+                   userObject = response.data ;
+                
+                        });
+           
+                     
+            })();
         function route(param) {
             switch (param){
                 case 'login':
@@ -23,26 +28,18 @@
                      window.alert("You must enter an age between 18 and 100");
                  } else {
                      
-                     CommonSvc.setPerson(vm.person);
-                     personData.age = vm.person.age;
-                     personData.gender = vm.person.gender;
-                     personData.height = vm.person.height;
-                     personData.weight = vm.person.weight;
-                     personData.zip_code = vm.person.zipcode;
-                     CommonSvc.setPersonData(personData);
-                     
-                     vm.reqData.weight.value = vm.person.weight;
-                     vm.reqData.height.value = vm.person.height;
-                     vm.reqData.age = vm.person.age;
+                     userObject.profile.age = vm.person.age;
+                     userObject.profile.height = vm.person.height;
+                     userObject.profile.weight = vm.person.weight;
+                     userObject.profile.address.push(vm.person.zipcode);
                      if (vm.person.gender == "Male"){
-                       vm.reqData.sex = "m"; 
+                       userObject.profile.gender = "m"; 
                      }
                      else{
-                        vm.reqData.sex = "f"; 
+                        userObject.profile.gender = "f"; 
                        
                      }
-                      
-                      CommonSvc.setReqData(vm.reqData);  
+                    CommonSvc.setUserData(userObject);
                      
                      $location.path('/login');
                  }
@@ -52,25 +49,18 @@
                      window.alert("You must enter an age between 18 and 100");
                  } else {
                      
-                     CommonSvc.setPerson(vm.person);
-                     personData.age = vm.person.age;
-                     personData.gender = vm.person.gender;
-                     personData.height = vm.person.height;
-                     personData.weight = vm.person.weight;
-                     personData.zip_code = vm.person.zipcode;
-                     CommonSvc.setPersonData(personData);
-                     
-                     vm.reqData.weight.value = vm.person.weight;
-                     vm.reqData.height.value = vm.person.height;
-                     vm.reqData.age = vm.person.age;
+                     userObject.profile.age = vm.person.age;
+                     userObject.profile.height = vm.person.height;
+                     userObject.profile.weight = vm.person.weight;
+                     userObject.profile.address.push(vm.person.zipcode);
                      if (vm.person.gender == "Male"){
-                       vm.reqData.sex = "m"; 
+                       userObject.profile.gender = "m"; 
                      }
                      else{
-                        vm.reqData.sex = "f"; 
+                        userObject.profile.gender = "f"; 
                        
                      }
-                      CommonSvc.setReqData(vm.reqData);  
+                    CommonSvc.setUserData(userObject); 
                      
                      $location.path('/register');
                  }
@@ -84,25 +74,19 @@
                         if (!vm.person.age || vm.person.age < 18 || vm.person.age > 100) {
                      window.alert("You must enter an age between 18 and 100");
                  } else { 
-                     CommonSvc.setPerson(vm.person);
-                     personData.age = vm.person.age;
-                     personData.gender = vm.person.gender;
-                     personData.height = vm.person.height;
-                     personData.weight = vm.person.weight;
-                     personData.zip_code = vm.person.zipcode;
-                     CommonSvc.setPersonData(personData);
-                     
-                     vm.reqData.weight.value = vm.person.weight;
-                     vm.reqData.height.value = vm.person.height;
-                     vm.reqData.age = vm.person.age;
+                     userObject.profile.age = vm.person.age;
+                     userObject.profile.height = vm.person.height;
+                     userObject.profile.weight = vm.person.weight;
+                     userObject.profile.address.push(vm.person.zipcode);
                      if (vm.person.gender == "Male"){
-                       vm.reqData.sex = "m"; 
+                       userObject.profile.gender = "m"; 
                      }
                      else{
-                        vm.reqData.sex = "f"; 
+                        userObject.profile.gender = "f"; 
                        
                      }
-                      CommonSvc.setReqData(vm.reqData);  
+                     //console.log(userObject)
+                    CommonSvc.setUserData(userObject);
                      
                      $location.path("/planning");
                  }
@@ -113,13 +97,5 @@
             }
         }
     }
-
-
-
-
-
-
-
-
 
 })();

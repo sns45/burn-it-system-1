@@ -14,9 +14,7 @@
                     $location.path('/profile');
                     break;
                 case 'Register':
-                    // save logic
-                    // CommonSvc.set
-                    /*$location.path('/register');*/ 
+                    
                     $location.path('/register');
                     break;
                  case 'Fpassword':

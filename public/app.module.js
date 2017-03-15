@@ -12,72 +12,39 @@ angular
     ])
     .service("CommonSvc", function () {
         var self = this;
-        var person = {"zipcode":"07305","weight":"80","height":"190","gender":"m","age":"27"};
-        var reqData;
-        var reqBmi;
-        var numberOfCal;
-        var foodtrack;
-        var personData ={"first_name":"", "last_name":"","age":"","gender":"","height":"","weight":"","zip_code":""};
-    
-        self.setPersonData = setPersonData;
-        self.getPersonData = getPersonData;
-        self.setNumberOfCal = setNumberOfCal;
-        self.getNumberOfCal  = getNumberOfCal;
-        self.setReqBmi = setReqBmi;
-        self.getReqBmi  = getReqBmi;       
-        self.setReqData = setReqData;
-        self.getReqData  = getReqData;
+        var person ;
+        var userData;
+        var weekData;
         self.setPerson = setPerson;
         self.getPerson = getPerson;
-        self.setFoodtrack = setFoodtrack;
-        self.getFoodtrack = getFoodtrack;
+        
+        self.setUserData = setUserData;
+        self.getUserData = getUserData;
+     
+        self.setWeekData = setWeekData;
+        self.getWeekData  = getWeekData;
     
-    
-       function setPersonData(obj) {
-            personData = obj;
+       function setUserData(obj) {
+            userData = obj;
         }
     
-        function getPersonData() {
-            return personData;
+        function getUserData() {
+            return userData;
         }
-    
-    
-        function setFoodtrack(obj) {
-            foodtrack = obj;
-        }
-    
-        function getFoodtrack() {
-            return foodtrack;
-        }  
-        function setNumberOfCal(obj) {
-            numberOfCal = obj;
-        }
-    
-        function getNumberOfCal() {
-            return numberOfCal;
-        }
-    
-        function setReqBmi(obj) {
-            reqBmi = obj;
-        }
-    
-        function getReqBmi() {
-            return reqBmi;
-        }
-        function setReqData(obj) {
-            reqData = obj;
-        }
-    
-        function getReqData() {
-            return reqData;
-        }
-    
-        function setPerson(obj) {
+         
+       function setPerson(obj) {
             person = obj;
         }
-
+    
         function getPerson() {
             return person;
+        }
+    function setWeekData(obj) {
+            weekData = obj;
+        }
+    
+        function getWeekData() {
+            return weekData;
         }
     })
     .controller("burnCtrl", ["$scope", "$location", burnCtrl]);
