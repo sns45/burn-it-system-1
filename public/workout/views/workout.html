@@ -33,3 +33,79 @@
         </div>
     </div>
 </div>
+
+<!--new code-->
+
+<div class="container" id="welcomecontainer">
+        <h1 id="welcome"> </h1></div>
+    <div class="container" id="planningtablecontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Best Gyms in your region</h3></div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name </th>
+                                <th>Address </th>
+                                <th>Telephone </th>
+                                <th>Select </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Janet Williams</td>
+                                <td>12 Bergen Street NY 10082</td>
+                                <td>347-8903787 </td>
+                                <td> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="planningtablecontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <h3>Best personal trainer in your region</h3></div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name </th>
+                                <th>Address </th>
+                                <th>Telephone </th>
+                                <th>Select </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="obj in vm.businessesArray">
+                                <td class="tdTable">{{obj.name}}</td>
+                                <td class="tdTable">{{obj.location.display_address[0]}} {{obj.location.display_address[1] }}</td>
+                                <td class="tdTable">{{obj.display_phone}}</td>
+                                <td class="tdTable"><img ng-src="{{obj.rating}}"></td>
+                                <td class="tdTable"><input type="checkbox" ng-click="vm.selectFunction(obj)"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <button class="btn btn-success btn-block btn-lg save-work-out-plan" type="button" id="savebutton" name="save-personal-trainer" ng-click="vm.route('Save')">Save </button>
+            </div>
+            <div class="col-md-2 col-md-offset-0">
+                <button class="btn btn-warning btn-block btn-lg save-work-out-plan" type="button" id="savebutton" name="save-personal-trainer"  ng-click="vm.route('Back')" >Back </button>
+            </div>
+        </div>
+    </div>
