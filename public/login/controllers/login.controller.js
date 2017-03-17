@@ -15,7 +15,7 @@
                     break;
                 case 'Register':
                     
-                    $location.path('/register');
+                    $location.path('/profile');
                     break;
                  case 'Fpassword':
                     $location.path('/profile');
