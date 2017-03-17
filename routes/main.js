@@ -2,9 +2,6 @@
  var router = express.Router();
  var request = require("request");
  var empty = require('is-empty');
- var assert = require('assert');
-
-
  router.post('/bmi', function (req, res) {
      if (empty(req.body.height.value) ||req.body.height.value==""|| empty(req.body.weight.value) || req.body.weight.value==""||empty(req.body.sex) ||req.body.sex==""|| empty(req.body.age)||req.body.age=="") {
             res.send(405, "Please make sure that the height, weight, sex and age values are entered. ");                                            
@@ -53,6 +50,4 @@
          });
      }
  });
-
-
  module.exports = router;

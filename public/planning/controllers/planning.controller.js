@@ -31,6 +31,7 @@
                     obj.height.value = userData.profile.height;
                     obj.sex = userData.profile.gender;
                     obj.age = userData.profile.age;
+                    //console.log(obj); 
                     }
                     
                 }

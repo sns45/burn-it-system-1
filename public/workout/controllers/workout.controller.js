@@ -8,12 +8,12 @@
         vm.selectFunction = selectFunction;
         var url = "";
         var data;
-        var workoutObj ={};/*= {
+        var workoutObj = {
             "name": ""
             , "address": ""
             , "phone_number": ""
             , "rating": ""
-        };*/
+        };
         var zipcode;
         var userData;
         (function () {
@@ -26,7 +26,7 @@
                         break;
                     }
                     else {
-                        zipcode = userData.profile.zipcode;
+                        zipcode = userData.profile.address[0];
                         url = "/api/main/yelp/workout/location/" + zipcode;
                     }
                 }
@@ -53,40 +53,39 @@
             workoutObj.address = obj.location.display_address[0] + obj.location.display_address[1];
             workoutObj.name = obj.name;
             workoutObj.rating = obj.rating;
-            /*if (workoutObj.address == "") {}
+            if (workoutObj.address == "") {}
             else {
                 userData.work_out.push(workoutObj);
-            }*/
+            }
         }
 
         function route(param) {
             switch (param) {
             case 'Back':
-                console.log(userData);
                 $location.path('/planning');
                 break;
             case 'Save':
-                userData.work_out.push(workoutObj);
+                CommonSvc.setWorkoutData(workoutObjArrays);
+                $location.path('/planning');
+                break;
+            }
+        }
+
+        function route(param) {
+            switch (param) {
+            case 'Back':
+                //userData.work_out = [];
+                console.log(userData);
+                //CommonSvc.setUserData(userData);
+                $location.path('/planning');
+                break;
+            case 'Save':
                 console.log(userData);
                 CommonSvc.setUserData(userData);
                 $location.path('/planning');
                 break;
             }
         }
-
-        /*function route(param) {
-            switch (param) {
-            case 'Back':
-                console.log(userData);
-                $location.path('/planning');
-                break;
-            case 'Save':
-                console.log(userData);
-                CommonSvc.setUserData(userData);
-                $location.path('/planning');
-                break;
-            }
-        }*/
 
         function ratingFunc(value) {
             if (value.rating == 5) {
@@ -116,7 +115,7 @@
             if (value.rating == 1) {
                 value.rating = "../../documents/stars/1Stars.png";
             }
-            if(value.rating == ""||value.rating == 0) {
+            else {
                 value.rating = "../../documents/stars/0Stars.png";
             }
         }
