@@ -1,4 +1,4 @@
-
+<!--
     <div class="maincontainer2">
         <div class="user-info-container">
             <div class="user-image-container">
@@ -37,11 +37,9 @@
         <input type="button" value="SignOut" ng-click="vm.route('SignOut')">
          <div class="choose-fitness-method-buttons-container">
              <div class="choose-fitness-method-button-wrapper">
-                 <!-- <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()"> -->
                  <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.route('ProfileNutritionists')">
              </div>
              <div class="choose-fitness-method-button-wrapper">
-                 <!-- <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan"> -->
                  <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan" ng-click="vm.route('ProfileDietPlan')">
              </div>
          </div>
@@ -58,8 +56,8 @@
              </div>
          </div>
      </div>
-
-
+    </div>
+-->
      <!--<div class="user-profile-options">
             <div class="user-profile-fitness-method-buttons-container">
             <div class="user-profile-fitness-method-button-wrapper">
@@ -80,4 +78,65 @@
       </div>-->
 
 
+
+<!--new code-->
+
+
+<div class="container" id="welcomecontainer"></div>
+    <div class="container" id="maincontainer">
+        <div class="col-md-4 col-md-push-8">
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/profile.png" id="profileimg"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default" type="button">Upload Pic</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-pull-4">
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="text" placeholder="First Name">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="text" placeholder="Address">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="text" placeholder="Phone number">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-12">
+                    <input type="password" placeholder="Re-enter Password">
+                </div>
+            </div>
+            <div class="row" id="welcome-inputs">
+                <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-default" type="button">Sign Up</button>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <button class="btn btn-default" type="button">Sign In</button>
+                </div>
+            </div>
+        </div>
     </div>
