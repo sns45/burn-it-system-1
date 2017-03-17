@@ -29,7 +29,7 @@
                     }
                     else {
                        
-                        zipcode = userData.profile.address[0];  
+                        zipcode = userData.profile.zipcode;  
                         url = "/api/main/yelp/nutritionists/location/" + zipcode;
                     }
                 }
@@ -56,19 +56,13 @@
              nutritionistObj.address = obj.location.display_address[0] + obj.location.display_address[1];
              nutritionistObj.name = obj.name;
              nutritionistObj.rating = obj.rating;
-            /*if(nutritionistObj.address==""){}
-            else{
-             userData.nutritionists.push(nutritionistObj);   
-            }*/
      
         }
 
         function route(param) {
             switch (param) {
             case 'Back':
-                 //userData.nutritionists =[];
                 console.log(userData);
-               // CommonSvc.setUserData(userData);
                 $location.path('/planning');
                 break;
             case 'Save':

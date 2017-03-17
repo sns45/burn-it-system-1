@@ -14,7 +14,7 @@ angular
         var self = this;
         var person ;
         var userData;
-        var weekData;
+        var weekData = {};
         self.setPerson = setPerson;
         self.getPerson = getPerson;
         

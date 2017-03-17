@@ -2,16 +2,18 @@
   "profile" :{
         "first_name":"",
 		"last_name":"",
+        "user_name":"",
 		"age"      :"",
 		"height"    :"",
 		"weight"   :"",
 		"gender"   :"",
         "email"   :"",
         "password"   :"",
-		"address" :[],
-        "photo": {
-        "thumb": ""
-      }		
+		"address" :"",
+        "phone_number":"",
+        "zipcode" :"",
+        "photo":""
+     		
     },
     "planning":{
 	    "status":"",
