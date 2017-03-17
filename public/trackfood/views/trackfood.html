@@ -1,20 +1,23 @@
-<div class="maincontainer">
-    <div class="workout-option">
-        <div class="title-container">
-            <div class="header2">
-                <!--<p3>Best Gyms in your region within 20 miles</p3>-->
-                <span class="choose-method">Build your diet plan</span>
+
+<!--new code-->
+ <div class="container" id="welcomecontainer">
+        <h1 id="welcome">Build your Diet Plan</h1></div>
+    <div class="container" id="dietsearchcontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <input class="input-lg" type="text" id="foodinput" ng-model="vm.food" ng-change="vm.example(vm.food)">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <button class="btn btn-default searchbutton" type="button" id="searchfoodbutton" ng-click="vm.viewSearchResultsModal()">Search </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="innerwhitebox">
-            <input type="text" class="foodname" ng-model="vm.food" ng-change="vm.example(vm.food)">
-            <!--<label class="maxcalorieslabel">Total max{500}calories</label>-->
-            <!--<div class="caloriebox"></div>-->
-            <input type="button" class="searchbutton" value="Search" ng-click="vm.viewSearchResultsModal()">
-            <input type="button" class="searchbutton2" value="Back" ng-click="vm.route('back')">
-            <!--<div class="contentcaloriebox">-->
-        </div>
-
     </div>
-   
-</div>
+    <div class="container" id="backbuttoncontainer">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <button class="btn btn-warning btn-block btn-sm searchbutton2" type="button" id="savebutton" ng-click="vm.route('back')">Back </button>
+            </div>
+        </div>
+    </div>

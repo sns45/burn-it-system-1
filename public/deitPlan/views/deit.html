@@ -2,6 +2,49 @@
 <!--<div class="innerbox">
         <p class="builddietplan"> Build your diet plan</p>
     </div>-->
+    <!--
+<div class="maincontainer">
+    <div class="workout-option">
+        <div class="title-container">
+            <div class="header2">
+                <span class="choose-method">Build your diet plan</span> </div>
+        </div>
+        <div>
+            <div class="innerwhitebox3">
+                <input type="button" value="Breakfast Max 500 Calories" name="breakfast" class="breakfast" ng-click="vm.route('BF')">
+                <input type="button" value="First Snack Max 200 calories" name="firstsnack" class="firstsnack" ng-click="vm.route('FS')">
+                <input type="button" value="Lunch Max 500 Calories " name="lunch" class="lunch" ng-click="vm.route('LN')">
+                <input type="button" value="Second Snack Max 200 calories" name="ssnack" class="secondsnack" ng-click="vm.route('SS')">
+                <input type="button" value="Dinner Max 500 Calories" name="diner" class="dinner" ng-click="vm.route('DN')"> </div>
+            <div class="vertical-menu">
+
+            <table  class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="active">Week's days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="obj in vm.weekArray" ng-click="vm.go(obj)">
+                    <td ng-class="vm.customStyle.colorClass">{{obj.day}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+            </div>
+        </div>
+        <div class="deitbuttons2">
+            <div class="save-plan-wrapper save-personal-trainer-wrapper">
+                <input type="button" value="Save" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('save')">
+                <input type="button" value="Preview" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('preview')">
+                <input type="button" value="Edit" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('edit')">
+                <input type="button" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('back')"> </div>
+        </div>
+    </div>
+</div>
+
+<!--new code-->
+
 <div class="maincontainer">
     <div class="workout-option">
         <div class="title-container">
@@ -41,3 +84,69 @@
         </div>
     </div>
 </div>
+-->
+<!--new code-->
+
+
+<div class="container" id="welcomecontainer">
+        <h1 id="welcome">Build your Diet Plan</h1></div>
+    <div class="container" id="planningtablecontainer">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block breakfast" type="button" name="breakfast"  ng-click="vm.route('BF')">Break Fast</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block btn-lg firstsnack" type="button" name="firstsnack" ng-click="vm.route('FS')">First Snack</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block btn-lg lunch" type="button" name="lunch"  ng-click="vm.route('LN')">Lunch </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block btn-lg ssnack" type="button" name="ssnack"  ng-click="vm.route('SS')">Second Snack</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-default btn-block btn-lg diner" type="button" name="diner"  ng-click="vm.route('DN')">Dinner </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <table  class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="active">Week's days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="obj in vm.weekArray" ng-click="vm.go(obj)">
+                    <td ng-class="vm.customStyle.colorClass">{{obj.day}}</td>
+                </tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="dietbuttons">
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-success btn-block btn-lg breakfast save-work-out-plan" type="button" id="savebutton"  name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('save')">Save </button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-info btn-block btn-lg save-work-out-plan" type="button" id="savebutton" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('preview')">Preview </button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-warning btn-block btn-lg save-work-out-plan" type="button" id="savebutton" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('edit')">Edit </button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-danger btn-block btn-lg save-work-out-plan" type="button" id="savebutton" value="Back" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('back')">Back </button>
+            </div>
+        </div>
+    </div>
