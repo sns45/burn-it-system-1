@@ -12,8 +12,6 @@
 
         function example(s) {
             console.log(s);
-            // API call here
-            //            CommonSvc.setFoodtrack(s);
         }
 
         function route(param) {

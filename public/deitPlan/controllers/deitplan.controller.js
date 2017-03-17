@@ -8,12 +8,8 @@
         vm.route = route;
         vm.totalCal = 0;
         vm.numCal = 0;
-        var foodArray =[];
-        var food ;/*= {
-                "food_name": ""
-                , "numberofCal": ""
-                , "thumb": ""
-            };*/
+        vm.foodArray =[];
+        var food ;
         var cal;
         var calories = [];
         var queryFood = {
@@ -21,7 +17,7 @@
         };
         var obj = {};
         var userData;
-        var week;
+        vm.week;
         var day ;
         var meal;
         (function () {
@@ -32,7 +28,6 @@
                 if (x < 1) {
                     if (CommonSvc.getUserData() == undefined) {
                         console.log("Please Provide the your Zip Code");
-                        $location.path('/');
                         break;
                     }
                     else {
@@ -43,12 +38,6 @@
             }
         })();
         
-        (function () {  
-           $http.get('../../documents/objects/weekObject.json').then(function (response) {
-                   week = response.data;  
-                        });         
-            })();
-
         function route(param) {
             switch (param) {
             case 'add':
@@ -59,182 +48,8 @@
                 }
                 else {
                     vm.totalCal = pretotal;
-                    console.log(food);
-                    console.log(day);
-                    console.log(meal);
+                    vm.foodArray.push(food);
                     
-                    for(var i=0 ; i<15; i++){
-                        if (day==='Monday'){
-                   if (meal==='breakfast'){
-                   
-                     week.monday.breakfast.push(food);
-                       break;
-                    }
-                     else if (meal=== 'firstSnack'){
-                        week.monday.first_snack.push(food);
-                         break;
-                    }
-                     else if (meal==='lunch'){
-                        week.monday.lunch.push(food);
-                         break;
-                    }
-                    else if (meal=== 'secondSnack'){
-                        week.monday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                        week.monday.diner.push(food);
-                        break;
-                    }
-                else{break;}
-                }
-              else if (day==='Tuesday'){
-                   console.log("I am here");
-                  if (meal==='breakfast'){
-                    week.tuesday.breakfast.push(food); 
-                      break;
-                    }
-                    else if (meal=== 'firstSnack'){
-                        week.tuesday.first_snack.push(food);
-                        break;
-                    }
-                   else if (meal==='lunch'){
-                        week.tuesday.lunch.push(food);
-                       break;
-                    }
-                    else if (meal=== 'secondSnack'){
-                        week.tuesday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                        week.tuesday.diner.push(food)
-                        break;
-                    }
-                  else{break;}
-              }
-              else  if (day === 'Wednesday') {
-                   if (meal==='breakfast'){
-                    week.wednesday.breakfast.push(food); 
-                       break;
-                    }
-                   else if (meal=== 'firstSnack'){
-                        week.wednesday.first_snack.push(food);
-                       break;
-                    }
-                    else if (meal==='lunch'){
-                        week.wednesday.lunch.push(food);
-                        break;
-                    }
-                    else if (meal=== 'secondSnack'){
-                        week.wednesday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                        week.wednesday.diner.push(food);
-                        break;
-                    }
-                  else{break;}
-              }
-                if (day=== 'Thursday') {
-                  if (meal==='breakfast'){
-                    week.thursday.breakfast.push(food); 
-                       break;
-                    }
-                    else if (meal=== 'firstSnack'){
-                       week.thursday.first_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='lunch'){
-                        week.thursday.lunch.push(food);
-                        break;
-                    }
-                   else if (meal=== 'secondSnack'){
-                        week.thursday.second_snack.push(food);
-                       break;
-                    }
-                   else if (meal==='diner'){
-                       week.thursday.diner.push(food);
-                       break;
-                    }
-                    else{break;}
-              }
-                  if (day==='Friday') {
-                   if (meal==='breakfast'){
-                    week.friday.breakfast.push(food); 
-                       break;
-                    }
-                    else if (meal=== 'firstSnack'){
-                        week.friday.first_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='lunch'){
-                        week.friday.lunch.push(food);
-                        break;
-                    }
-                   else if (meal=== 'secondSnack'){
-                        week.friday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                       week.friday.diner.push(food);
-                        break;
-                    }
-                      else{break;}
-              }
-              else  if (day==='Saturday') {
-                   if (meal==='breakfast'){
-                    week.saturday.breakfast.push(food); 
-                       break;
-                    }
-                    else if (meal=== 'firstSnack'){
-                        week.saturday.first_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='lunch'){
-                        week.saturday.lunch.push(food);
-                        break;
-                    }
-                   else if (meal=== 'secondSnack'){
-                        week.saturday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                        week.saturday.diner.push(food);
-                        break;
-                    }
-                  else{break;}
-              }
-              else  if (day==='Sunday') {
-                   if (meal==='breakfast'){
-                    week.sunday.breakfast.push(food);  
-                       break;
-                    }
-                    else if (meal=== 'firstSnack'){
-                        week.sunday.first_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='lunch'){
-                        week.sunday.lunch.push(food);
-                        break;
-                    }
-                    else if (meal=== 'secondSnack'){
-                        week.sunday.second_snack.push(food);
-                        break;
-                    }
-                    else if (meal==='diner'){
-                        week.sunday.diner.push(food);
-                        break;
-                    }
-                  else{
-                      break;
-                  }
-              }
-              else{break;}
-                        
-                    }
-                    
-                   
-                console.log(week);
                 }
                 break;
             case 'search':
@@ -251,8 +66,6 @@
                             food.numberofCal = parseInt(response.data.foods[i].nf_calories);
                             break;
                         }
-                        //foodArray.push(food);
-                        //food = {};
                     }
                     if (cal >= vm.maxCal) {
                         window.alert("You reatch the Maximum number of Calories");
@@ -266,9 +79,8 @@
         }
         function close() { 
             
-            CommonSvc.setWeekData(week);
-            console.log(week);
-            $uibModalInstance.close();
+            $uibModalInstance.close(vm.foodArray);
+            
         }
     }
 })();
