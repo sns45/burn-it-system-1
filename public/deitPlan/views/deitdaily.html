@@ -1,5 +1,5 @@
 
-<div class="maincontainer">
+<!--<div class="maincontainer">
     <div class="workout-option">
         <div class="title-container">
             <div class="header2">
@@ -21,4 +21,42 @@
        
     </div>
     </div>
-</div>
+</div>-->
+
+<!--new code-->
+
+<div class="container" id="welcomecontainer">
+        <h1 id="welcome">Build your Diet Plan</h1></div>
+    <div class="container" id="dietsearchcontainer">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-6">
+                <h4 class="text-muted">Max Calories <span ng-bind="vm.maxCal"></span></h4></div>
+            <div class="col-md-3">
+                <div class="caloriebox" ng-bind="vm.totalCal"> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <input class="input-lg foodname" type="text" placeholder="Enter Food Item here" id="foodinput"  ng-model="vm.food">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <button class="btn btn-default searchbutton" type="button" id="searchfoodbutton"   ng-click="vm.route('search')">#Calories </button>
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+               <div class="contentcaloriebox" ng-bind="vm.numCal">
+         </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <button class="btn btn-default btn-lg savecalbutton" type="button" id="addbutton" name="save-personal-trainer" ng-click="vm.close()">Save </button>
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <button class="btn btn-default btn-lg addbutton" type="button" id="addbutton" ng-click="vm.route('add')">Add </button>
+            </div>
+        </div>
+    </div>
+    
+    
