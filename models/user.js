@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://heroku_mjkf92zm:c7u3a2u5a01582kqhf0dbgs4gc@ds129010.mlab.com:29010/heroku_mjkf92zm');
 var Schema = mongoose.Schema;
 var UserSchema = new Schema({
     profile: {
