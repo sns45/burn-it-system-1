@@ -1,6 +1,5 @@
-<!--<div class="welcome-plans">-->
+<!--<div class="welcome-plans">
 <div class="maincontainer">
-
     <div class="nutritionist-list-container">
         <table class="planing-list-table">
             <thead>
@@ -13,22 +12,18 @@
                 <tr>
                     <td class="tdresults">Status</td>
                     <td class="tbresults" ng-bind="vm.status"></td>
-
                 </tr>
                 <tr>
                     <td class="tdresults">Risk </td>
                     <td class="tbresults" ng-bind="vm.risk"></td>
-
                 </tr>
                 <tr>
                     <td class="tdresults">Current weight</td>
                     <td class="tbresults" ng-bind="vm.weight"></td>
-
                 </tr>
                 <tr>
                     <td class="tdresults">Ideal Weight</td>
                     <td class="tbresults" ng-bind="vm.ideslWeight"></td>
-
                 </tr>
             </tbody>
         </table>
@@ -47,7 +42,6 @@
             </div>
         </div>
         <div class="choose-fitness-method-buttons-container">
-
             <div class="choose-fitness-method-button-wrapper">
                 <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out"
                         ng-click="vm.route('workout')">
@@ -63,4 +57,78 @@
             <input type="button" value="BACK" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('Back')">
         </div>
     </div>
-</div>
+</div>-->
+
+<!---new responsive code-->
+
+<div class="container" id="welcomecontainer">
+        <h1 id="welcome"> </h1></div>
+    <div class="container" id="planningtablecontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Body Mass Index Details</th>
+                                <th>Analysis </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Status </td>
+                                <td class="tbresults" ng-bind="vm.status"></td>
+                            </tr>
+                            <tr>
+                                <td>Risk </td>
+                                <td class="tbresults" ng-bind="vm.risk"></td>
+                            </tr>
+                            <tr>
+                                <td>Current Weight</td>
+                                <td class="tbresults" ng-bind="vm.weight"></td>
+                            </tr>
+                            <tr>
+                                <td>Ideal Weight</td>
+                                <td class="tbresults" ng-bind="vm.ideslWeight"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="maincontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Customize Health Plan</h4></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                  
+                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input meet-nutritionist" name="meet-nutritionist" type="button" ng-click="vm.route('nutritionists')"><i class="fa fa-user-md"></i> Meet a Nutritionist</button>
+            </div>
+            <div class="col-md-6">
+               
+                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input build-diet-plan" name="build-diet-plan" type="button" ng-click="vm.route('diet')"><i class="glyphicon glyphicon-list" ></i> Build Diet Plan</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+             
+                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input work-out" name="work-out" type="button" ng-click="vm.route('workout')"><i class="glyphicon glyphicon-lock"></i> Work Out</button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input keep-track-of-food" name="keep-track-of-food" type="button" ng-click="vm.route('nutritionfacts')"><i class="glyphicon glyphicon-cutlery"></i> Keep Track of Food</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <button class="btn btn-success btn-block btn-sm save-plan2" name="save-plan" type="button" id="savebutton" ng-click="vm.route('login')">Save </button>
+            </div>
+            <div class="col-md-2 col-md-offset-0">
+                <button class="btn btn-warning btn-block btn-sm save-work-out-plan" name="save-personal-trainer" type="button" id="savebutton" ng-click="vm.route('Back')">Back </button>
+            </div>
+        </div>
+    </div>
